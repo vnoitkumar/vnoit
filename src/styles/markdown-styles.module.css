@@ -1,0 +1,30 @@
+.markdown {
+  @apply text-lg leading-relaxed;
+}
+
+.markdown h2 {
+  @apply text-2xl lg:text-3xl mt-12 mb-4 leading-snug font-semibold text-custom-black dark:text-baby-powder;
+}
+
+.markdown h3 {
+  @apply text-xl lg:text-2xl mt-8 mb-4 leading-snug;
+}
+
+.markdown a {
+  @apply underline-offset-2 decoration-1 underline decoration-dotted max-w-full overflow-auto inline-block align-bottom text-blue-500;
+}
+
+.markdown li {
+  @apply list-disc list-inside mb-2;
+}
+
+.markdown img {
+  @apply rounded-md;
+}
+
+.markdown p,
+.markdown ul,
+.markdown ol,
+.markdown blockquote {
+  @apply my-6 text-custom-black/90 dark:text-baby-powder/90;
+}

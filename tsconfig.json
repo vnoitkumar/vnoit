@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "noEmit": true,
+    "incremental": true,
+    "module": "esnext",
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    ".next/types/**/*.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "src/components/footer.jsx",
+    "src/lib/markdownToHtml.js"
+, "src/components/post-preview.jsx", "src/components/date-formatter.jsx", "src/utils/utils.js", "src/components/post-body.jsx", "src/components/post-header.jsx", "src/app/posts/[slug]/page.jsx"  ],
+  "exclude": ["node_modules"]
+}
