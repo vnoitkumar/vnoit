@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "baby-powder": "#FDFFFC",
+        "baby-powder": "#ffffff",
         "rich-black": "#011627",
         "light-sea-green": "#2EC4B6",
         "custom-black": "#292a2a",
