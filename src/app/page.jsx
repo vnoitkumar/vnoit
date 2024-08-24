@@ -21,6 +21,7 @@ export default function Home() {
             excerpt={post.excerpt}
             tag={post.tag}
             readTime={post.readTime}
+            coverImageBlurHash={post.coverImageBlurHash}
           />
         ))}
       </div>

@@ -6,6 +6,7 @@ import { trimTitle } from "@/utils/utils";
 function PostPreview({
   title,
   coverImage,
+  coverImageBlurHash,
   date,
   excerpt,
   author,
@@ -19,7 +20,15 @@ function PostPreview({
         href={`/posts/${slug}`}
         aria-label={`Read more about ${trimTitle(title)}`}
       >
-        <Image src={coverImage} alt={title} width={1000} height={500} />
+        <Image
+          src={coverImage}
+          height={500}
+          width={1000}
+          alt={title}
+          placeholder="blur"
+          loading="lazy"
+          blurDataURL={coverImageBlurHash}
+        />
       </Link>
       <div className="flex-col justify-start items-start gap-3 flex">
         <div className="justify-start items-center gap-5 inline-flex">

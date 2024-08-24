@@ -5,13 +5,17 @@ export function FullLogo() {
     <>
       <img
         src="/vnoit-full-dark-color-logo.svg"
-        className="h-12 m-auto block dark:hidden"
-        alt="Vnoit dark logo"
+        className="m-auto block dark:hidden"
+        height={200}
+        width={100}
+        alt="Vnoit dark color logo"
       />
       <img
         src="/vnoit-full-light-color-logo.svg"
-        className="h-12 m-auto hidden dark:block"
-        alt="Vnoit light logo"
+        className="m-auto hidden dark:block"
+        height={200}
+        width={100}
+        alt="Vnoit light color logo"
       />
     </>
   );

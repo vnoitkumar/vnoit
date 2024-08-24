@@ -23,6 +23,7 @@ export default async function Post({ params }) {
           excerpt={post.excerpt}
           coverImage={post.coverImage}
           readTime={post.readTime}
+          coverImageBlurHash={post.coverImageBlurHash}
         />
         <PostBody
           content={content}

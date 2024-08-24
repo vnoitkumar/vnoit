@@ -11,6 +11,7 @@ export function PostHeader({
   author,
   coverImage,
   readTime,
+  coverImageBlurHash
 }) {
   return (
     <section className="mx-auto mt-1 max-w-7xl p-6 lg:px-8">
@@ -40,6 +41,8 @@ export function PostHeader({
           height={500}
           width={1000}
           alt={title}
+          placeholder="blur"
+          blurDataURL={coverImageBlurHash}
           priority
         />
 

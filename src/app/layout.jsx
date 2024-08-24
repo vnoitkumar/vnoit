@@ -10,15 +10,15 @@ const workSans = Work_Sans({
 
 export const metadata = {
   title: {
-    template: '%s | Vnoit',
-    default: 'Vnoit',
+    template: "%s | Vnoit",
+    default: "Vnoit",
   },
-}
+};
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={workSans.className}>
+    <html lang="en" className={workSans.className}>
+      <body>
         <Header />
         {children}
         <Footer />
