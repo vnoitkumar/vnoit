@@ -3,19 +3,13 @@ import Image from "next/image";
 export function FullLogo() {
   return (
     <>
-      <Image
-        height={200}
-        width={100}
-        alt="Vnoit dark logo"
+      <img
         src="/vnoit-full-dark-color-logo.svg"
-        className="block dark:hidden m-auto"
+        className="h-12 m-auto block dark:hidden"
       />
-      <Image
-        height={200}
-        width={100}
-        alt="Vnoit light logo"
+      <img
         src="/vnoit-full-light-color-logo.svg"
-        className="hidden dark:block m-auto"
+        className="h-12 m-auto hidden dark:block"
       />
     </>
   );

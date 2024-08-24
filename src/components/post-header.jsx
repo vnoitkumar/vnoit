@@ -40,6 +40,7 @@ export function PostHeader({
           height={500}
           width={1000}
           alt={title}
+          priority
         />
 
         <h1 className="text-2xl lg:text-4xl font-bold text-custom-black dark:text-baby-powder max-w-5xl leading-snug">
