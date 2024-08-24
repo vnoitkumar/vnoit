@@ -46,7 +46,7 @@ export function generateMetadata({ params }) {
     title: `${post.title} | Vnoit`,
     description: post.excerpt,
     openGraph: {
-      title: post.title,
+      title: `${post.title} | Vnoit`,
       description: post.excerpt,
       type: "website",
       siteName: "Vnoit",
@@ -55,7 +55,7 @@ export function generateMetadata({ params }) {
       authors: [post.author.name],
     },
     twitter: {
-      title: post.title,
+      title: `${post.title} | Vnoit`,
       description: post.excerpt,
       card: "summary_large_image",
       creator: post.twitterHandel,
