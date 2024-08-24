@@ -43,7 +43,7 @@ export function generateMetadata({ params }) {
   }
 
   return {
-    title: post.title,
+    title: `${post.title} | Vnoit`,
     description: post.excerpt,
     openGraph: {
       title: post.title,
@@ -51,7 +51,6 @@ export function generateMetadata({ params }) {
       type: "website",
       siteName: "Vnoit",
       url: `https://vnoit.com/posts/${params.slug}`,
-      description: post.excerpt,
       images: [post.ogImage.url],
       authors: [post.author.name],
     },

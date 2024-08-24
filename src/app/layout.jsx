@@ -9,9 +9,22 @@ const workSans = Work_Sans({
 });
 
 export const metadata = {
-  title: {
-    template: "%s | Vnoit",
-    default: "Vnoit",
+  title: "Vnoit (Vinoth)",
+  description: "Exploring tech trends, coding tips, and innovation insights.",
+  openGraph: {
+    title: "Vnoit (Vinoth)",
+    description: "Exploring tech trends, coding tips, and innovation insights.",
+    type: "website",
+    siteName: "Vnoit",
+    url: "https://vnoit.com",
+    // images: "url",
+  },
+  twitter: {
+    title: "Vnoit (Vinoth)",
+    description: "Exploring tech trends, coding tips, and innovation insights.",
+    card: "summary_large_image",
+    creator: "@vnoitkumar",
+    // images: "url",
   },
 };
 
