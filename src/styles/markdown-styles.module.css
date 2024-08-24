@@ -26,5 +26,5 @@
 .markdown ul,
 .markdown ol,
 .markdown blockquote {
-  @apply my-6 text-custom-black/90 dark:text-baby-powder/90;
+  @apply my-6 text-custom-black dark:text-baby-powder;
 }

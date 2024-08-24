@@ -11,13 +11,14 @@ export function Header() {
         className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
       >
         <div className="flex lg:flex-1">
-          <Link href="/" className="-m-1.5 p-1.5">
+          <Link href="/" className="-m-1.5 p-1.5" aria-label="Home page">
             <span className="sr-only">Vnoit</span>
             <FullLogo />
           </Link>
         </div>
         <div className="hidden lg:flex lg:gap-x-12">
           <Link
+            aria-label="Home page"
             href="/"
             className="text-base font-semibold leading-6 text-custom-black dark:text-baby-powder"
           >
@@ -25,6 +26,7 @@ export function Header() {
           </Link>
 
           <Link
+            aria-label="About page"
             href="/about"
             className="text-base font-semibold leading-6 text-custom-black dark:text-baby-powder"
           >
