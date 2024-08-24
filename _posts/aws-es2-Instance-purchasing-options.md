@@ -1,5 +1,5 @@
 ---
-title: "Bye Bye, Try-Catch Blocks: Meet JavaScript's Safe Assignment Operator Proposal"
+title: "Bye Bye, Try-Catch Blocks"
 excerpt: "A constructive and inclusive social network for software developers. With you every step of your journey."
 coverImage: "/assets/blog/aws-es2-Instance-purchasing-options/cover.png"
 date: "2024-06-23"
@@ -9,6 +9,7 @@ author:
   picture: "/assets/blog/authors/vinoth.jpg"
 ogImage:
   url: "/assets/blog/aws-es2-Instance-purchasing-options/cover.png"
+twitterHandel: "@vnoitkumar"
 ---
 
 Amazon EC2 provides purchasing options to enable you to optimize your costs based on your needs.

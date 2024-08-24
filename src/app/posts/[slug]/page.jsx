@@ -41,12 +41,26 @@ export function generateMetadata({ params }) {
     return notFound();
   }
 
-  const title = `${post.title} | Spread tech`;
+  const title = `${post.title}`;
 
   return {
     title,
+    description: post.excerpt,
     openGraph: {
+      title: post.title,
+      description: post.excerpt,
+      type: 'website',
+      siteName: 'Vnoit',
+      url: `https://vnoit.com/posts/${params.slug}`,
+      description: post.excerpt,
+      images: [post.ogImage.url],
+      authors: [post.author.name],
+    },
+    twitter: {
       title,
+      description: post.excerpt,
+      card: 'summary_large_image',
+      creator: post.twitterHandel,
       images: [post.ogImage.url],
     },
   };

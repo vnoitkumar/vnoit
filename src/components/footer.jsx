@@ -7,7 +7,7 @@ export function Footer() {
       <div className="flex lg:flex-1">
         <Link href="/" className="-m-1.5 p-1.5">
           <span className="sr-only">Vnoit</span>
-          <FullLogo className="h-12 m-auto" />
+          <FullLogo />
         </Link>
       </div>
       <div className="flex gap-1">

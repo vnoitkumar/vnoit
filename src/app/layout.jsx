@@ -9,9 +9,11 @@ const workSans = Work_Sans({
 });
 
 export const metadata = {
-  title: "Vnoit",
-  description: "Exploring tech trends, coding tips, and innovation insights.",
-};
+  title: {
+    template: '%s | Vnoit',
+    default: 'Vnoit',
+  },
+}
 
 export default function RootLayout({ children }) {
   return (

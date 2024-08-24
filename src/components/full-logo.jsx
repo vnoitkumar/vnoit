@@ -1,13 +1,21 @@
-export function FullLogo({ className }) {
+import Image from "next/image";
+
+export function FullLogo() {
   return (
     <>
-      <img
+      <Image
+        height={200}
+        width={100}
+        alt="Vnoit"
         src="/vnoit-full-dark-color-logo.svg"
-        className={`block dark:hidden ${className}`}
+        className={`block dark:hidden m-auto`}
       />
-      <img
+      <Image
+        height={200}
+        width={100}
+        alt="Vnoit"
         src="/vnoit-full-light-color-logo.svg"
-        className={`hidden dark:block ${className}`}
+        className={`hidden dark:block m-auto`}
       />
     </>
   );
