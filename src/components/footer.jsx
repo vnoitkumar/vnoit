@@ -12,20 +12,6 @@ export function Footer() {
       </div>
       <div className="flex gap-1">
         <a
-          href="mailto:vnoitkumar@gmail.com"
-          className="p-2"
-          aria-label="Email address"
-        >
-          <svg
-            viewBox="0 0 24 24"
-            className="fill-custom-black/80 hover:fill-custom-black dark:fill-baby-powder/80 dark:hover:fill-baby-powder h-5 w-5"
-          >
-            <path d="M1.5 8.67v8.58a3 3 0 0 0 3 3h15a3 3 0 0 0 3-3V8.67l-8.928 5.493a3 3 0 0 1-3.144 0L1.5 8.67Z" />
-            <path d="M22.5 6.908V6.75a3 3 0 0 0-3-3h-15a3 3 0 0 0-3 3v.158l9.714 5.978a1.5 1.5 0 0 0 1.572 0L22.5 6.908Z" />
-          </svg>
-        </a>
-
-        <a
           href="https://github.com/vnoitkumar"
           target="_blank"
           rel="noopener noreferrer"

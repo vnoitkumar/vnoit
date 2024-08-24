@@ -17,14 +17,21 @@ export const metadata = {
     type: "website",
     siteName: "Vnoit",
     url: "https://vnoit.com",
-    // images: "url",
+    images: [
+      {
+        url: "/assets/images/og-image.jpg",
+        width: 1000,
+        height: 500,
+        alt: "Vnoit (Vinoth)",
+      },
+    ],
   },
   twitter: {
     title: "Vnoit (Vinoth)",
     description: "Exploring tech trends, coding tips, and innovation insights.",
     card: "summary_large_image",
     creator: "@vnoitkumar",
-    // images: "url",
+    url: "/assets/images/og-image.jpg",
   },
 };
 
