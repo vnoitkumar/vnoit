@@ -19,7 +19,13 @@ export const metadata = {
     url: "https://vnoit.com",
     images: [
       {
-        url: "/assets/images/og-image.jpg",
+        url: "/assets/images/og-image-3000x1500.jpg",
+        width: 3000,
+        height: 1500,
+        alt: "Vnoit (Vinoth)",
+      },
+      {
+        url: "/assets/images/og-image-1000x500.jpg",
         width: 1000,
         height: 500,
         alt: "Vnoit (Vinoth)",
@@ -31,7 +37,7 @@ export const metadata = {
     description: "Exploring tech trends, coding tips, and innovation insights.",
     card: "summary_large_image",
     creator: "@vnoitkumar",
-    url: "/assets/images/og-image.jpg",
+    url: "/assets/images/og-image-3000x1500.jpg",
   },
 };
 
