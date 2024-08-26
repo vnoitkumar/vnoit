@@ -23,6 +23,19 @@ Amazon EC2 provides purchasing options to enable you to optimize your costs base
 - You pay only when your On-Demand Instances are in the running state.
 - Can increase or decrease your compute capacity.
 
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Example HTML5 Document</title>
+  </head>
+  <body>
+    <p>Test</p>
+  </body>
+</html>
+```
+
 ## Reserved Instances
 
 - Up to 75% savings compared to On-Demand Instance pricing.

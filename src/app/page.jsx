@@ -14,13 +14,12 @@ export default function Home() {
         <div>
           <p className="text-custom-black/80 dark:text-baby-powder/80 font-medium mt-3">
             I am a Front-end Engineer from Indonesia. I love sharing what i know
-            on devaradise.com, and sometime i also share freebies like this. I'm
-            also active on dev.to and twitter.
+            on devaradise.com, and sometime i also share freebies like this.
           </p>
 
           <p className="text-custom-black/80 dark:text-baby-powder/80 font-medium mt-3">
             I made Devolio to help you easily set up your own blog and portfolio
-            website. It's a static site built with Astro and Tailwind CSS, and
+            website. Its a static site built with Astro and Tailwind CSS, and
             you can deploy it on platforms like Netlify, Vercel, or Cloudflare
             Pages.
           </p>
