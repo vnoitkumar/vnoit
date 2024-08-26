@@ -9,10 +9,10 @@ const workSans = Work_Sans({
 });
 
 export const metadata = {
-  title: "Vnoit (Vinoth)",
+  title: "Vinoth (Vnoit)",
   description: "Exploring tech trends, coding tips, and innovation insights.",
   openGraph: {
-    title: "Vnoit (Vinoth)",
+    title: "Vinoth (Vnoit)",
     description: "Exploring tech trends, coding tips, and innovation insights.",
     type: "website",
     siteName: "Vnoit",
@@ -22,18 +22,18 @@ export const metadata = {
         url: "/assets/images/og-image-3000x1500.jpg",
         width: 3000,
         height: 1500,
-        alt: "Vnoit (Vinoth)",
+        alt: "Vinoth (Vnoit)",
       },
       {
         url: "/assets/images/og-image-1000x500.jpg",
         width: 1000,
         height: 500,
-        alt: "Vnoit (Vinoth)",
+        alt: "Vinoth (Vnoit)",
       },
     ],
   },
   twitter: {
-    title: "Vnoit (Vinoth)",
+    title: "Vinoth (Vnoit)",
     description: "Exploring tech trends, coding tips, and innovation insights.",
     card: "summary_large_image",
     creator: "@vnoitkumar",

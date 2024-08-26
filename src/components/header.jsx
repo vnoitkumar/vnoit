@@ -33,9 +33,9 @@ export function Header() {
             About
           </Link>
         </div>
-        {/* <div className="flex flex-1 justify-end">
+        <div className="flex flex-1 justify-end">
           <ThemeMenu />
-        </div> */}
+        </div>
       </nav>
     </header>
   );
