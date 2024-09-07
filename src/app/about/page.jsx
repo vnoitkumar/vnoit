@@ -1,5 +1,4 @@
 import Image from "next/image";
-import vinoth from "@/img/vinoth-2000x2000.jpg";
 
 export const metadata = {
   title: "Vinoth (Vnoit) - About",
@@ -12,16 +11,22 @@ export const metadata = {
     url: "https://vnoit.com",
     images: [
       {
-        url: "/assets/images/og-image-3000x1500.jpg",
-        width: 3000,
-        height: 1500,
-        alt: "Vinoth (Vnoit) - About",
+        url: "/assets/images/og-image-3600x1890.jpg",
+        width: 3600,
+        height: 1890,
+        alt: "Vinoth (Vnoit)",
       },
       {
-        url: "/assets/images/og-image-1000x500.jpg",
-        width: 1000,
-        height: 500,
-        alt: "Vinoth (Vnoit) - About",
+        url: "/assets/images/og-image-1800x945.jpg",
+        width: 1800,
+        height: 945,
+        alt: "Vinoth (Vnoit)",
+      },
+      {
+        url: "/assets/images/og-image-1200x630.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Vinoth (Vnoit)",
       },
     ],
   },
@@ -30,7 +35,7 @@ export const metadata = {
     description: "Exploring tech trends, coding tips, and innovation insights.",
     card: "summary_large_image",
     creator: "@vnoitkumar",
-    url: "/assets/images/og-image-3000x1500.jpg",
+    url: "/assets/images/og-image-3600x1890.jpg",
   },
 };
 
@@ -158,12 +163,16 @@ function About() {
               Stack Overflow
             </a>
           </p>
+
+          <p className="text-custom-black/60 dark:text-baby-powder/60 font-light text-xs mt-3">
+            Last updated at: 8th Sep 2024 
+          </p>
         </div>
       </div>
       <Image
         className="rounded-xl xl:mx-0 mx-auto xl:h-96 h-auto xl:w-96 w-auto"
         quality={100}
-        src={vinoth}
+        src='/assets/images/authors/vinoth-2000x2000.jpg'
         height={500}
         width={500}
         alt="Picture of Vinoth (vnoit)"

@@ -17,7 +17,7 @@ function PostPreview({
     <div className="flex-col justify-start items-start gap-5 inline-flex hover-up">
       <Link
         className="rounded-lg overflow-hidden max-h-96"
-        href={`/posts/${slug}`}
+        href={`/blogs/${slug}`}
         aria-label={`Read more about ${trimTitle(title)}`}
       >
         <Image
@@ -48,7 +48,7 @@ function PostPreview({
         </div>
         <h3>
           <Link
-            href={`/posts/${slug}`}
+            href={`/blogs/${slug}`}
             aria-label={`Read more about ${trimTitle(title)}`}
             className="text-custom-black dark:text-baby-powder text-2xl font-bold leading-snug hover:underline decoration-light-sea-green decoration-2 underline-offset-2"
           >

@@ -1,4 +1,4 @@
-import { getAllPosts } from "@/lib/api";
+import { getAllBlogPosts } from "@/lib/api";
 import PostPreview from "@/components/post-preview";
 
 export const metadata = {
@@ -12,16 +12,22 @@ export const metadata = {
     url: "https://vnoit.com",
     images: [
       {
-        url: "/assets/images/og-image-3000x1500.jpg",
-        width: 3000,
-        height: 1500,
-        alt: "Vinoth (Vnoit) - Blogs",
+        url: "/assets/images/og-image-3600x1890.jpg",
+        width: 3600,
+        height: 1890,
+        alt: "Vinoth (Vnoit)",
       },
       {
-        url: "/assets/images/og-image-1000x500.jpg",
-        width: 1000,
-        height: 500,
-        alt: "Vinoth (Vnoit) - Blogs",
+        url: "/assets/images/og-image-1800x945.jpg",
+        width: 1800,
+        height: 945,
+        alt: "Vinoth (Vnoit)",
+      },
+      {
+        url: "/assets/images/og-image-1200x630.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Vinoth (Vnoit)",
       },
     ],
   },
@@ -30,13 +36,13 @@ export const metadata = {
     description: "Exploring tech trends, coding tips, and innovation insights.",
     card: "summary_large_image",
     creator: "@vnoitkumar",
-    url: "/assets/images/og-image-3000x1500.jpg",
+    url: "/assets/images/og-image-3600x1890.jpg",
   },
 };
 
 
 function Blogs() {
-  const allPosts = getAllPosts();
+  const allPosts = getAllBlogPosts();
   return (
     <section className="mb-12 mx-auto mt-1 max-w-7xl p-6 lg:px-8">
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-14">

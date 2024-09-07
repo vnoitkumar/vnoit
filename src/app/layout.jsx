@@ -9,6 +9,7 @@ const workSans = Work_Sans({
 });
 
 export const metadata = {
+  metadataBase: new URL("https://vnoit.com"),
   title: "Vinoth (Vnoit)",
   description: "Exploring tech trends, coding tips, and innovation insights.",
   openGraph: {
@@ -19,15 +20,21 @@ export const metadata = {
     url: "https://vnoit.com",
     images: [
       {
-        url: "/assets/images/og-image-3000x1500.jpg",
-        width: 3000,
-        height: 1500,
+        url: "/assets/images/og-image-3600x1890.jpg",
+        width: 3600,
+        height: 1890,
         alt: "Vinoth (Vnoit)",
       },
       {
-        url: "/assets/images/og-image-1000x500.jpg",
-        width: 1000,
-        height: 500,
+        url: "/assets/images/og-image-1800x945.jpg",
+        width: 1800,
+        height: 945,
+        alt: "Vinoth (Vnoit)",
+      },
+      {
+        url: "/assets/images/og-image-1200x630.jpg",
+        width: 1200,
+        height: 630,
         alt: "Vinoth (Vnoit)",
       },
     ],
@@ -37,7 +44,7 @@ export const metadata = {
     description: "Exploring tech trends, coding tips, and innovation insights.",
     card: "summary_large_image",
     creator: "@vnoitkumar",
-    url: "/assets/images/og-image-3000x1500.jpg",
+    url: "/assets/images/og-image-3600x1890.jpg",
   },
 };
 

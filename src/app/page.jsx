@@ -56,7 +56,7 @@ export default function Home() {
 
       <section className="mb-12">
         <h2 className="text-custom-black dark:text-baby-powder text-xl font-semibold leading-snug mb-3">
-          Recent Posts
+          Recent Blog Posts
         </h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-14">
           {recentPosts.map((post) => (
