@@ -14,24 +14,22 @@ export default async function Post({ params }) {
   const content = await markdownToHtml(post.content || "");
 
   return (
-    <main>
-      <article>
-        <PostHeader
-          title={post.title}
-          date={post.date}
-          author={post.author}
-          excerpt={post.excerpt}
-          coverImage={post.coverImage}
-          readTime={post.readTime}
-          coverImageBlurHash={post.coverImageBlurHash}
-        />
-        <PostBody
-          content={content}
-          coverImage={post.coverImage}
-          title={post.title}
-        />
-      </article>
-    </main>
+    <article>
+      <PostHeader
+        title={post.title}
+        date={post.date}
+        author={post.author}
+        excerpt={post.excerpt}
+        coverImage={post.coverImage}
+        readTime={post.readTime}
+        coverImageBlurHash={post.coverImageBlurHash}
+      />
+      <PostBody
+        content={content}
+        coverImage={post.coverImage}
+        title={post.title}
+      />
+    </article>
   );
 }
 

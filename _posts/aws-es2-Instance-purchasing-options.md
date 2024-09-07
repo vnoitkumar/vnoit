@@ -66,7 +66,7 @@ Amazon EC2 provides purchasing options to enable you to optimize your costs base
 - Physical server with EC2 instance capacity fully dedicated to your use.
 - Full control of the Instance placement.
 - Visibility into the underlying socket, the core of the hardware.
-- You must purchase a Dedicated Hosts Instance minimum for one year.
+- You must purchase a Dedicated Hosts Instance [minimum](https://google.com) for one year.
 
 ## Dedicated Instances
 

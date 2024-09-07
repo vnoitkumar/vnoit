@@ -1,27 +1,55 @@
-import { getAllPosts } from "@/lib/api";
+import { getRecentPosts } from "@/lib/api";
 import PostPreview from "@/components/post-preview";
 import Link from "next/link";
 
 export default function Home() {
-  const allPosts = getAllPosts();
+  const recentPosts = getRecentPosts();
 
   return (
-    <main className="mx-auto mt-1 max-w-7xl p-6 lg:px-8">
+    <section className="mx-auto mt-1 max-w-7xl p-6 lg:px-8">
       <section className="mb-12">
         <h2 className="text-custom-black dark:text-baby-powder text-3xl font-bold leading-snug">
-          Hi There 👋, Vinoth (Vnoit) Here!
+          Hey 👋 y&apos;all, I&apos;m Vinoth (Vnoit)!
         </h2>
         <div>
           <p className="text-custom-black/80 dark:text-baby-powder/80 font-medium mt-3">
-            I am a Front-end Engineer from Indonesia. I love sharing what i know
-            on devaradise.com, and sometime i also share freebies like this.
+            I&apos;m a Senior Consultant at&nbsp;
+            <a
+              href="https://www.thoughtworks.com/en-in"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline-offset-2 decoration-1 underline decoration-dotted text-blue-500"
+              aria-label="Thoughtworks"
+            >
+              Thoughtworks
+            </a>
+            &nbsp;in Bengaluru, India, capable of crafting applications with
+            Golang, Node.js, React, React Native, etc.
           </p>
 
           <p className="text-custom-black/80 dark:text-baby-powder/80 font-medium mt-3">
-            I made Devolio to help you easily set up your own blog and portfolio
-            website. Its a static site built with Astro and Tailwind CSS, and
-            you can deploy it on platforms like Netlify, Vercel, or Cloudflare
-            Pages.
+            I love dropping knowledge and sharing my thoughts over at&nbsp;
+            <a
+              href="https://vnoit.com/blogs"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline-offset-2 decoration-1 underline decoration-dotted text-blue-500"
+              aria-label="Vinoth&apos;s blogs"
+            >
+              vnoit.com/blogs
+            </a>
+            . I also make time to teach and mentor people online. If you&apos;re
+            curious, check out my profile on&nbsp;
+            <a
+              className="underline-offset-2 decoration-1 underline decoration-dotted text-blue-500"
+              href="https://www.teacheron.com/tutor/1OZp"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Vinoth&apos;s TeacherOn profile"
+            >
+              TeacherOn
+            </a>
+            .
           </p>
         </div>
       </section>
@@ -31,7 +59,7 @@ export default function Home() {
           Recent Posts
         </h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-14">
-          {allPosts.map((post) => (
+          {recentPosts.map((post) => (
             <PostPreview
               key={post.slug}
               title={post.title}
@@ -437,6 +465,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-    </main>
+    </section>
   );
 }
