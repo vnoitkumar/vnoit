@@ -1,6 +1,39 @@
 import Image from "next/image";
 import vinoth from "@/img/vinoth-2000x2000.jpg";
 
+export const metadata = {
+  title: "Vinoth (Vnoit) - About",
+  description: "Exploring tech trends, coding tips, and innovation insights.",
+  openGraph: {
+    title: "Vinoth (Vnoit) - About",
+    description: "Exploring tech trends, coding tips, and innovation insights.",
+    type: "website",
+    siteName: "Vnoit",
+    url: "https://vnoit.com",
+    images: [
+      {
+        url: "/assets/images/og-image-3000x1500.jpg",
+        width: 3000,
+        height: 1500,
+        alt: "Vinoth (Vnoit) - About",
+      },
+      {
+        url: "/assets/images/og-image-1000x500.jpg",
+        width: 1000,
+        height: 500,
+        alt: "Vinoth (Vnoit) - About",
+      },
+    ],
+  },
+  twitter: {
+    title: "Vinoth (Vnoit) - About",
+    description: "Exploring tech trends, coding tips, and innovation insights.",
+    card: "summary_large_image",
+    creator: "@vnoitkumar",
+    url: "/assets/images/og-image-3000x1500.jpg",
+  },
+};
+
 function About() {
   return (
     <section className="mx-auto mt-1 max-w-7xl p-6 lg:px-8 block xl:flex gap-20">
