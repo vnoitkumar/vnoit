@@ -30,13 +30,13 @@ export default function Home() {
           <p className="text-custom-black/80 dark:text-baby-powder/80 font-medium mt-3">
             I love dropping knowledge and sharing my thoughts over at&nbsp;
             <a
-              href="https://vnoit.com/blogs"
+              href="https://vnoit.vercel.app/blogs"
               target="_blank"
               rel="noopener noreferrer"
               className="underline-offset-2 decoration-1 underline decoration-dotted text-blue-500"
               aria-label="Vinoth&apos;s blogs"
             >
-              vnoit.com/blogs
+              vnoit.vercel.app/blogs
             </a>
             . I also make time to teach and mentor people online. If you&apos;re
             curious, check out my profile on&nbsp;
