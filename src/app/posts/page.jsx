@@ -8,7 +8,7 @@ export const metadata = {
     description: "Exploring tech trends, coding tips, and innovation insights.",
     type: "website",
     siteName: "Vnoit",
-    url: "https://vnoit.vercel.app",
+    url: "https://vnoit.com",
     images: [
       {
         url: "/assets/images/og-image-3600x1890.jpg",

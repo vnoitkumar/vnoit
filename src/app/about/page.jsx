@@ -8,7 +8,7 @@ export const metadata = {
     description: "Exploring tech trends, coding tips, and innovation insights.",
     type: "website",
     siteName: "Vnoit",
-    url: "https://vnoit.vercel.app",
+    url: "https://vnoit.com",
     images: [
       {
         url: "/assets/images/og-image-3600x1890.jpg",
@@ -65,13 +65,13 @@ function About() {
           <p className="text-custom-black/80 dark:text-baby-powder/80 font-medium mt-3">
             I love dropping knowledge and sharing my thoughts over at&nbsp;
             <a
-              href="https://vnoit.vercel.app/blogs"
+              href="https://vnoit.com/blogs"
               target="_blank"
               rel="noopener noreferrer"
               className="underline-offset-2 decoration-1 underline decoration-dotted text-blue-500"
               aria-label="Vinoth&apos;s blogs"
             >
-              vnoit.vercel.app/blogs
+              vnoit.com/blogs
             </a>
             . I also make time to teach and mentor people online. If you&apos;re
             curious, check out my profile on&nbsp;
@@ -107,13 +107,13 @@ function About() {
             posters in Figma and sharing them on X and LinkedIn; you can check
             them all out at&nbsp;
             <a
-              href="https://vnoit.vercel.app/posts"
+              href="https://vnoit.com/posts"
               target="_blank"
               rel="noopener noreferrer"
               className="underline-offset-2 decoration-1 underline decoration-dotted text-blue-500"
               aria-label="Vinoth&apos;s posts created using Figma"
             >
-              vnoit.vercel.app/posts
+              vnoit.com/posts
             </a>
             .
           </p>

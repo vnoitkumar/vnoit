@@ -5,6 +5,6 @@ export default function robots() {
       disallow: "/",
       //   allow: "/",
     },
-    sitemap: "https://vnoit.vercel.app/sitemap.xml",
+    sitemap: "https://vnoit.com/sitemap.xml",
   };
 }

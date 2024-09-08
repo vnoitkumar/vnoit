@@ -1,9 +1,9 @@
 ---
-title: "Bye Bye, Try-Catch Blocks"
-excerpt: "A constructive and inclusive social network for software developers. With you every step of your journey."
+title: "AWS - EC2 Instance purchasing options"
+excerpt: "Find the most affordable AWS EC2 instance options for your cloud strategy by comparing spot, reserved, on-demand, and dedicated host options."
 coverImage: "/assets/images/blogs/aws-es2-Instance-purchasing-options/cover.jpg"
 date: "2024-06-23"
-readTime: "9 min read"
+readTime: "3 min read"
 author:
   name: Vinoth
   picture: "/assets/images/authors/vinoth.jpg"
@@ -15,6 +15,8 @@ coverImageBlurHash: "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUND
 
 Amazon EC2 provides purchasing options to enable you to optimize your costs based on your needs.
 
+![EC2 purchasing options](/assets/images/blogs/aws-es2-Instance-purchasing-options/ec2-launch-types.jpg)
+
 ## On-Demand Instances
 
 - Pay, by the second, for the instances that you launch.
@@ -22,19 +24,6 @@ Amazon EC2 provides purchasing options to enable you to optimize your costs base
 - You have full control over its lifecycle, you decide when to launch, start, stop, reboot, or terminate it.
 - You pay only when your On-Demand Instances are in the running state.
 - Can increase or decrease your compute capacity.
-
-```html
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Example HTML5 Document</title>
-  </head>
-  <body>
-    <p>Test</p>
-  </body>
-</html>
-```
 
 ## Reserved Instances
 
@@ -66,7 +55,7 @@ Amazon EC2 provides purchasing options to enable you to optimize your costs base
 - Physical server with EC2 instance capacity fully dedicated to your use.
 - Full control of the Instance placement.
 - Visibility into the underlying socket, the core of the hardware.
-- You must purchase a Dedicated Hosts Instance [minimum](https://google.com) for one year.
+- You must purchase a Dedicated Hosts Instance minimum for one year.
 
 ## Dedicated Instances
 
@@ -76,3 +65,11 @@ Amazon EC2 provides purchasing options to enable you to optimize your costs base
 ## Great combo
 
 Reserved Instance for baseline + On-Demand and Spot Instances for scaling.
+
+---
+
+### Resource
+
+[https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-purchasing-options.html](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-purchasing-options.html)
+
+[https://aws.amazon.com/ec2/pricing](https://aws.amazon.com/ec2/pricing)

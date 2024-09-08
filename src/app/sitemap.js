@@ -1,4 +1,4 @@
-const baseBath = "https://vnoit.vercel.app";
+const baseBath = "https://vnoit.com";
 
 export default function sitemap() {
   return [
@@ -26,9 +26,9 @@ export default function sitemap() {
       changeFrequency: "monthly",
       priority: 0.5,
       images: [
-        "https://vnoit.vercel.app/assets/images/posts/auto-correction-in-git/auto-correction-in-git.png",
-        "https://vnoit.vercel.app/assets/images/posts/ec2-launch-types/ec2-launch-types.png",
-        "https://vnoit.vercel.app/assets/images/posts/aws-iam/AWS-IAM.png",
+        "https://vnoit.com/assets/images/posts/auto-correction-in-git/auto-correction-in-git.png",
+        "https://vnoit.com/assets/images/posts/ec2-launch-types/ec2-launch-types.png",
+        "https://vnoit.com/assets/images/posts/aws-iam/AWS-IAM.png",
       ],
     },
   ];

@@ -21,7 +21,6 @@ export function Header() {
           <MenuItem name="Home" path="/" />
           <MenuItem name="Blogs" path="/blogs" />
           <MenuItem name="Posts" path="/posts" />
-          <MenuItem name="Projects" path="/projects" />
           <MenuItem name="About" path="/about" />
         </div>
         {/* <div className="flex flex-1 justify-end">
