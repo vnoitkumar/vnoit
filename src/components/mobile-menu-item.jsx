@@ -17,8 +17,10 @@ function MobileMenuItem(props) {
     >
       {icon}
       <span
-        className={`text-sm text-custom-black/80 dark:text-baby-powder/80 group-hover:text-light-sea-green dark:group-hover:text-light-sea-green ${
-          isActive ? "text-light-sea-green" : ""
+        className={`text-sm group-hover:text-light-sea-green dark:group-hover:text-light-sea-green ${
+          isActive
+            ? "text-light-sea-green"
+            : "text-custom-black/80 dark:text-baby-powder/80"
         }`}
       >
         {name}
