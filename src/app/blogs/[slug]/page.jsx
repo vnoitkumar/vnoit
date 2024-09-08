@@ -48,7 +48,7 @@ export function generateMetadata({ params }) {
       description: post.excerpt,
       type: "website",
       siteName: "Vnoit",
-      url: `https://www.vnoit.com/blogs/${params.slug}`,
+      url: `https://vnoit.com/blogs/${params.slug}`,
       images: [post.ogImage.url],
       authors: [post.author.name],
     },

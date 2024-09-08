@@ -6,26 +6,26 @@ const projects = [
   {
     title: "Code Snap",
     description: "Share your source code in image formate",
-    demoLink: "https://code-snap.www.vnoit.com",
+    demoLink: "https://code-snap.vnoit.com",
     gitHubLink: "https://github.com/vnoitkumar/code-snap",
   },
   {
     title: "Tab Sync",
     description:
       "Changing the theme in one tab will also change in all the other open tabs of the same website using a service worker",
-    demoLink: "https://tab-sync.www.vnoit.com",
+    demoLink: "https://tab-sync.vnoit.com",
     gitHubLink: "https://github.com/vnoitkumar/tab-sync",
   },
   {
     title: "Case Converter",
     description: "A simple case converter",
-    demoLink: "https://case-converter.www.vnoit.com",
+    demoLink: "https://case-converter.vnoit.com",
     gitHubLink: "https://github.com/vnoitkumar/case-converter",
   },
   {
     title: "JS executer",
     description: "Online JavaScript Editor",
-    demoLink: "https://jsexecuter.www.vnoit.com",
+    demoLink: "https://jsexecuter.vnoit.com",
     gitHubLink: "https://github.com/vnoitkumar/js-executer",
   },
   {
@@ -66,13 +66,13 @@ export default function Home() {
           <p className="text-custom-black/80 dark:text-baby-powder/80 font-medium mt-3">
             I love dropping knowledge and sharing my thoughts over at&nbsp;
             <a
-              href="https://www.vnoit.com/blogs"
+              href="https://vnoit.com/blogs"
               target="_blank"
               rel="noopener noreferrer"
               className="underline-offset-2 decoration-1 underline decoration-dotted text-blue-500"
               aria-label="Vinoth's blogs"
             >
-              www.vnoit.com/blogs
+              vnoit.com/blogs
             </a>
             . I also make time to teach and mentor people online. If you&apos;re
             curious, check out my profile on&nbsp;

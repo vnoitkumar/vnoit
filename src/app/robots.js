@@ -4,6 +4,6 @@ export default function robots() {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://www.vnoit.com/sitemap.xml",
+    sitemap: "https://vnoit.com/sitemap.xml",
   };
 }

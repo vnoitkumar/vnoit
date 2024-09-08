@@ -1,4 +1,4 @@
-const baseBath = "https://www.vnoit.com";
+const baseBath = "https://vnoit.com";
 
 export default function sitemap() {
   return [
