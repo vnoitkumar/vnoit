@@ -57,7 +57,7 @@ export default function RootLayout({ children }) {
     <html lang="en" className={workSans.className}>
       <body>
         <Header />
-        <main className="min-h-[calc(100vh-400px)]">{children}</main>
+        <main className="min-h-[calc(100vh-460px)] lg:min-h-[calc(100vh-400px)]">{children}</main>
         <Footer />
       </body>
     </html>

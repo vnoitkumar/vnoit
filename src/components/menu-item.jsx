@@ -14,9 +14,7 @@ function MenuItem(props) {
       aria-label={`${name} page`}
       href={path}
       className={`text-base font-semibold leading-6 text-custom-black dark:text-baby-powder decoration-light-sea-green decoration-2 underline-offset-2 ${
-        isActive
-          ? "underline"
-          : ""
+        isActive ? "underline" : ""
       }`}
     >
       {name}
