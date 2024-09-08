@@ -8,7 +8,7 @@ export const metadata = {
     description: "Exploring tech trends, coding tips, and innovation insights.",
     type: "website",
     siteName: "Vnoit",
-    url: "https://vnoit.com",
+    url: "https://www.vnoit.com",
     images: [
       {
         url: "/assets/images/og-image-3600x1890.jpg",
@@ -35,7 +35,10 @@ export const metadata = {
     description: "Exploring tech trends, coding tips, and innovation insights.",
     card: "summary_large_image",
     creator: "@vnoitkumar",
-    url: "/assets/images/og-image-3600x1890.jpg",
+    images: {
+      url: "/assets/images/og-image-3600x1890.jpg",
+      alt: "Vinoth (Vnoit)",
+    },
   },
 };
 
@@ -65,13 +68,13 @@ function About() {
           <p className="text-custom-black/80 dark:text-baby-powder/80 font-medium mt-3">
             I love dropping knowledge and sharing my thoughts over at&nbsp;
             <a
-              href="https://vnoit.com/blogs"
+              href="https://www.vnoit.com/blogs"
               target="_blank"
               rel="noopener noreferrer"
               className="underline-offset-2 decoration-1 underline decoration-dotted text-blue-500"
-              aria-label="Vinoth&apos;s blogs"
+              aria-label="Vinoth's blogs"
             >
-              vnoit.com/blogs
+              www.vnoit.com/blogs
             </a>
             . I also make time to teach and mentor people online. If you&apos;re
             curious, check out my profile on&nbsp;
@@ -80,7 +83,7 @@ function About() {
               href="https://www.teacheron.com/tutor/1OZp"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Vinoth&apos;s TeacherOn profile"
+              aria-label="Vinoth's TeacherOn profile"
             >
               TeacherOn
             </a>
@@ -88,9 +91,9 @@ function About() {
           </p>
 
           <p className="text-custom-black/80 dark:text-baby-powder/80 font-medium mt-3">
-            I&apos;ve primarily focused on the EdTech and FinTech sectors, working on
-            projects aimed at enhancing and optimizing educational tools and
-            financial applications.
+            I&apos;ve primarily focused on the EdTech and FinTech sectors,
+            working on projects aimed at enhancing and optimizing educational
+            tools and financial applications.
           </p>
 
           <p className="text-custom-black/80 dark:text-baby-powder/80 font-medium mt-3">
@@ -107,13 +110,13 @@ function About() {
             posters in Figma and sharing them on X and LinkedIn; you can check
             them all out at&nbsp;
             <a
-              href="https://vnoit.com/posts"
+              href="https://www.vnoit.com/posts"
               target="_blank"
               rel="noopener noreferrer"
               className="underline-offset-2 decoration-1 underline decoration-dotted text-blue-500"
-              aria-label="Vinoth&apos;s posts created using Figma"
+              aria-label="Vinoth's posts created using Figma"
             >
-              vnoit.com/posts
+              www.vnoit.com/posts
             </a>
             .
           </p>
@@ -125,7 +128,7 @@ function About() {
             it&apos;s my best solo shot yet. Also, peep my profile on&nbsp;
             <a
               href="https://www.linkedin.com/in/vnoitkumar"
-              aria-label="Vinoth&apos;s LinkedIn profile"
+              aria-label="Vinoth's LinkedIn profile"
               target="_blank"
               rel="noopener noreferrer"
               className="underline-offset-2 decoration-1 underline decoration-dotted text-blue-500"
@@ -135,7 +138,7 @@ function About() {
             ,&nbsp;
             <a
               href="https://x.com/vnoitkumar"
-              aria-label="Vinoth&apos;s X (formerly Twitter) profile"
+              aria-label="Vinoth's X (formerly Twitter) profile"
               target="_blank"
               rel="noopener noreferrer"
               className="underline-offset-2 decoration-1 underline decoration-dotted text-blue-500"
@@ -145,7 +148,7 @@ function About() {
             ,&nbsp;
             <a
               href="https://github.com/vnoitkumar"
-              aria-label="Vinoth&apos;s GitHub profile"
+              aria-label="Vinoth's GitHub profile"
               target="_blank"
               rel="noopener noreferrer"
               className="underline-offset-2 decoration-1 underline decoration-dotted text-blue-500"
@@ -155,7 +158,7 @@ function About() {
             , and&nbsp;
             <a
               href="https://stackoverflow.com/users/5154807/vnoitkumar"
-              aria-label="Vinoth&apos;s Stack Overflow profile"
+              aria-label="Vinoth's Stack Overflow profile"
               target="_blank"
               rel="noopener noreferrer"
               className="underline-offset-2 decoration-1 underline decoration-dotted text-blue-500"
@@ -165,14 +168,14 @@ function About() {
           </p>
 
           <p className="text-custom-black/60 dark:text-baby-powder/60 font-light text-xs mt-3">
-            Last updated at: 8th Sep 2024 
+            Last updated at: 8th Sep 2024
           </p>
         </div>
       </div>
       <Image
         className="rounded-xl xl:mx-0 mx-auto xl:h-96 h-auto xl:w-96 w-auto"
         quality={100}
-        src='/assets/images/authors/vinoth-2000x2000.jpg'
+        src="/assets/images/authors/vinoth-2000x2000.jpg"
         height={500}
         width={500}
         alt="Picture of Vinoth (vnoit)"

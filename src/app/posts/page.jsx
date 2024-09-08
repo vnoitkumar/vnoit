@@ -8,7 +8,7 @@ export const metadata = {
     description: "Exploring tech trends, coding tips, and innovation insights.",
     type: "website",
     siteName: "Vnoit",
-    url: "https://vnoit.com",
+    url: "https://www.vnoit.com",
     images: [
       {
         url: "/assets/images/og-image-3600x1890.jpg",
@@ -35,7 +35,10 @@ export const metadata = {
     description: "Exploring tech trends, coding tips, and innovation insights.",
     card: "summary_large_image",
     creator: "@vnoitkumar",
-    url: "/assets/images/og-image-3600x1890.jpg",
+    images: {
+      url: "/assets/images/og-image-3600x1890.jpg",
+      alt: "Vinoth (Vnoit)",
+    },
   },
 };
 
@@ -70,7 +73,7 @@ function Posts() {
       width: 2048,
       height: 1024,
       title: "EC2 Launch types",
-      artical: "https://vnoit.com/blogs/aws-es2-Instance-purchasing-options",
+      artical: "https://www.vnoit.com/blogs/aws-es2-Instance-purchasing-options",
       blurDataURL:
         "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAgICAgJCAkKCgkNDgwODRMREBARExwUFhQWFBwrGx8bGx8bKyYuJSMlLiZENS8vNUROQj5CTl9VVV93cXecnNEBCAgICAkICQoKCQ0ODA4NExEQEBETHBQWFBYUHCsbHxsbHxsrJi4lIyUuJkQ1Ly81RE5CPkJOX1VVX3dxd5yc0f/CABEIAB4APAMBIgACEQEDEQH/xAAxAAACAgMBAAAAAAAAAAAAAAADBQACAQQGBwEAAwEBAAAAAAAAAAAAAAAAAQIDAAT/2gAMAwEAAhADEAAAAPNQNdafWSg1xj0C5kXPzvQa0W0rSrSyuKUo1voFxxAMk6f/xAAyEAACAQMCAwQIBwEAAAAAAAABAgMABBESIQUTMRVBUoEiQlFjcZGT0RQzYqHC0uPw/9oACAEBAAE/AJ3vZfXAQSyBSHVCdLYOdwa5d73yn64/tTcUkt7aJJbG2OhAhkaXLMfFsaTjUfVeGWxU9MySH980t82BL2VbYkRSAbhsYbfIBbYmryad25ojWBFTBWObI2792JzUV80cqSc7XocHS7kqcdxGaivTfBpdCxAHSFiOlegOdqtpbpIpFiSFgZZ8ag5YemfCCKXtU9LsjPuv86kk4tFpHNlIxtohBA+aU7vJIXdtTN1bbf5VDNcpbwDkwkcpSMiQnBGwOB1prq+OWMMBz+iX7V2te4DGyYBQNykgAArhzvIk7ucs0pJPtOkVALvlMYpDp5823LRtJ1nvLA71LaX0sjObi5BPhwoHkJKHD7wA5nuhjr6X+lTRLDIU1EsuzZXGPkTUHaH4eALKdPKQgcpMDI6ZLb0O0MHEjfST+1XJ4vMrRaWdCBnToj/lXDlZY5lYYIlII8hTQcTR5FiudKGRyFDkdWz7KMHFGRke61KwwQZGwQe47V2PJ4IP+8qXhlwBgcoD4n7UsPFEAVbnAAAAEjdB5Ukd8PzryQJ7t8nPmKk4dbSyO80krZOdWELH45FWVny43ETZTX6+x6D2Cv/EAB8RAAICAQQDAAAAAAAAAAAAAAABAhGRAxIxMkFigv/aAAgBAgEBPwBUl4wRjGKpJGMGrFbbFx2ZfsfTNVrZyf/EACgRAAIBAwICCwAAAAAAAAAAAAECAAMR0RIxBCETFDIzUVNhgYKSwf/aAAgBAwEBPwBrliSHPzGJUqOX7TbDc4tLG2z/AHGJwDv04Go7GMp1Neip5+JzGUkd0o9QT+mAHyUPuczgqb9YB02HOf/Z",
     },

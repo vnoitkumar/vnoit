@@ -2,9 +2,8 @@ export default function robots() {
   return {
     rules: {
       userAgent: "*",
-      disallow: "/",
-      //   allow: "/",
+      allow: "/",
     },
-    sitemap: "https://vnoit.com/sitemap.xml",
+    sitemap: "https://www.vnoit.com/sitemap.xml",
   };
 }

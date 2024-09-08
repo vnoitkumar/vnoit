@@ -9,7 +9,7 @@ const workSans = Work_Sans({
 });
 
 export const metadata = {
-  metadataBase: new URL("https://vnoit.com"),
+  metadataBase: new URL("https://www.vnoit.com"),
   title: "Vinoth (Vnoit)",
   description: "Exploring tech trends, coding tips, and innovation insights.",
   openGraph: {
@@ -17,7 +17,7 @@ export const metadata = {
     description: "Exploring tech trends, coding tips, and innovation insights.",
     type: "website",
     siteName: "Vnoit",
-    url: "https://vnoit.com",
+    url: "https://www.vnoit.com",
     images: [
       {
         url: "/assets/images/og-image-3600x1890.jpg",
@@ -44,8 +44,12 @@ export const metadata = {
     description: "Exploring tech trends, coding tips, and innovation insights.",
     card: "summary_large_image",
     creator: "@vnoitkumar",
-    url: "/assets/images/og-image-3600x1890.jpg",
+    images: {
+      url: "/assets/images/og-image-3600x1890.jpg",
+      alt: "Vinoth (Vnoit)",
+    },
   },
+  assets: ['https://www.vnoit.com/assets'],
 };
 
 export default function RootLayout({ children }) {
