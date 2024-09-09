@@ -1,23 +1,84 @@
-import Image from "next/image";
-
 export function FullLogo() {
   return (
-    <>
-      <Image
-        src="/assets/images/logos/vnoit-full-dark-color-logo.svg"
-        className="m-auto block dark:hidden"
-        height={200}
-        width={100}
-        alt="Vnoit dark color logo"
-      />
-      <Image
-        src="/assets/images/logos/vnoit-full-light-color-logo.svg"
-        className="m-auto hidden dark:block"
-        height={200}
-        width={100}
-        alt="Vnoit light color logo"
-      />
-    </>
+    <svg version="1" viewBox="0 0 750 375" height={60}>
+      <defs>
+        <path
+          id="reuse-0"
+          d="M483.883 140.094l106.035-36.27 71.61 209.344-106.032 36.27zm0 0"
+        ></path>
+      </defs>
+      <defs>
+        <clipPath id="a">
+          <path d="M527 103h77v246h-77zm0 0"></path>
+        </clipPath>
+        <clipPath id="b">
+          <use xlinkHref="#reuse-0"></use>
+        </clipPath>
+        <clipPath id="c">
+          <use xlinkHref="#reuse-0"></use>
+        </clipPath>
+        <clipPath id="d">
+          <path d="M527 118h42v231h-42zm0 0"></path>
+        </clipPath>
+        <clipPath id="e">
+          <use xlinkHref="#reuse-0"></use>
+        </clipPath>
+        <clipPath id="f">
+          <use xlinkHref="#reuse-0"></use>
+        </clipPath>
+        <clipPath id="g">
+          <path d="M529.73 46.637h57.086v57.086H529.73zm0 0"></path>
+        </clipPath>
+        <clipPath id="h">
+          <path d="M558.273 46.637c-15.765 0-28.543 12.777-28.543 28.543 0 15.761 12.778 28.543 28.543 28.543 15.762 0 28.543-12.782 28.543-28.543 0-15.766-12.78-28.543-28.543-28.543zm0 0"></path>
+        </clipPath>
+      </defs>
+      <path
+        fill="currentColor"
+        className="fill-custom-black dark:fill-baby-powder"
+        d="M196.136 131.976l-65.11 157.53H74.057L9.245 131.977h56.687l37.782 96.203 39.812-96.203zm0 0"
+      ></path>
+      <path
+        fill="currentColor"
+        className="fill-custom-black dark:fill-baby-powder"
+        d="M283.313 129.366c19.57 0 35.313 5.813 47.22 17.438 11.913 11.625 17.874 29.164 17.874 52.61v90.093h-55.219v-81.094c0-21.5-8.62-32.25-25.859-32.25-9.5 0-17.11 3.102-22.828 9.297-5.711 6.2-8.563 15.5-8.563 27.906v76.14H180.72v-157.53h52.593v17.156c6.207-6.395 13.57-11.285 22.094-14.672 8.531-3.395 17.832-5.094 27.906-5.094zm0 0"
+      ></path>
+      <path
+        fill="currentColor"
+        className="fill-custom-black dark:fill-baby-powder"
+        d="M432.39 292.116c-16.855 0-32.062-3.484-45.624-10.453-13.563-6.976-24.172-16.664-31.828-29.062-7.657-12.407-11.485-26.454-11.485-42.141 0-15.508 3.828-29.461 11.485-41.86 7.656-12.394 18.21-22.03 31.672-28.906 13.468-6.882 28.726-10.328 45.78-10.328 17.052 0 32.36 3.446 45.923 10.328 13.562 6.875 24.117 16.465 31.672 28.766 7.562 12.305 11.343 26.305 11.343 42 0 15.687-3.78 29.734-11.343 42.14-7.555 12.399-18.11 22.087-31.672 29.063-13.563 6.969-28.871 10.453-45.922 10.453zm0-43.875c9.688 0 17.63-3.344 23.829-10.031 6.207-6.688 9.312-15.938 9.312-27.75 0-11.633-3.105-20.742-9.312-27.328-6.2-6.582-14.14-9.875-23.828-9.875s-17.633 3.293-23.828 9.875c-6.2 6.586-9.297 15.695-9.297 27.328 0 11.812 3.098 21.062 9.297 27.75 6.195 6.687 14.14 10.031 23.828 10.031zm303.435 34.875c-4.648 2.906-10.312 5.133-17 6.672-6.68 1.55-13.797 2.328-21.359 2.328-20.543 0-36.336-5.035-47.375-15.11-11.043-10.07-16.563-25.085-16.563-45.046v-52.89H610.56v-41.282h22.968V96.82h55.22v40.97h36.046v41.28h-36.047v52.313c0 5.617 1.5 10.023 4.5 13.219 3.008 3.199 7.031 4.796 12.063 4.796 6.394 0 12.015-1.644 16.86-4.937zm0 0"
+      ></path>
+      <g clipPath="url(#a)">
+        <g clipPath="url(#b)">
+          <g clipPath="url(#c)">
+            <path
+              fill="currentColor"
+              className="fill-custom-black dark:fill-baby-powder"
+              d="M536.598 122.063l53.59-18.333-17.868 86.555 31.414-10.746-48.367 169.375 6.203-120.656-33.605 13.383zm0 0"
+            ></path>
+          </g>
+        </g>
+      </g>
+      <g clipPath="url(#d)">
+        <g clipPath="url(#e)">
+          <g clipPath="url(#f)">
+            <path
+              fill="currentColor"
+              className="fill-custom-black dark:fill-baby-powder"
+              d="M536.598 122.063l9.238-3.16-17.871 122.738zm18.77 226.851l12.671-122.871-6.469 2.215zm0 0"
+            ></path>
+          </g>
+        </g>
+      </g>
+      <g clipPath="url(#g)">
+        <g clipPath="url(#h)">
+          <path
+            fill="#2EC4B6"
+            d="M529.73 46.637h57.086v57.086H529.73zm0 0"
+          ></path>
+        </g>
+      </g>
+    </svg>
   );
 }
 
