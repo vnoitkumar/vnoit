@@ -47,7 +47,7 @@ function Blogs() {
   const allPosts = getAllBlogPosts();
   return (
     <section className="mb-12 mx-auto mt-1 max-w-7xl p-6 lg:px-8">
-      <h2 className="text-custom-black dark:text-baby-powder text-xl font-semibold leading-snug mb-3">
+      <h2 className="text-jet-black dark:text-baby-powder text-xl font-semibold leading-snug mb-3">
         All Blogs
       </h2>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-14">

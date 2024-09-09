@@ -40,7 +40,7 @@ function PostPreview({
               src={author.picture}
               alt={author.name}
             /> */}
-            <div className="text-custom-black/80 dark:text-baby-powder/80 text-sm font-medium leading-none">
+            <div className="text-jet-black/80 dark:text-baby-powder/80 text-sm font-medium leading-none">
               {/* {author.name} -  */}
               <DateFormatter dateString={date} /> &nbsp;.&nbsp; {readTime}
             </div>
@@ -50,12 +50,12 @@ function PostPreview({
           <Link
             href={`/blogs/${slug}`}
             aria-label={`Read more about ${trimTitle(title)}`}
-            className="text-custom-black dark:text-baby-powder text-2xl font-bold leading-snug hover:underline decoration-light-sea-green decoration-2 underline-offset-2"
+            className="text-jet-black dark:text-baby-powder text-2xl font-bold leading-snug hover:underline decoration-folly decoration-2 underline-offset-2"
           >
             {title}
           </Link>
         </h3>
-        <p className="text-custom-black/80 dark:text-baby-powder/80 font-medium leading-snug">
+        <p className="text-jet-black/80 dark:text-baby-powder/80 font-medium leading-snug line-clamp-2">
           {excerpt}
         </p>
       </div>

@@ -44,17 +44,17 @@ export default function Home() {
   return (
     <section className="mx-auto mt-1 max-w-7xl p-6 lg:px-8">
       <section className="mb-12">
-        <h2 className="text-custom-black dark:text-baby-powder text-3xl font-bold leading-snug">
+        <h2 className="text-jet-black dark:text-baby-powder text-3xl font-bold leading-snug">
           Hey 👋 y&apos;all, I&apos;m Vinoth (Vnoit)!
         </h2>
         <div>
-          <p className="text-custom-black/80 dark:text-baby-powder/80 font-medium mt-3">
+          <p className="text-jet-black/80 dark:text-baby-powder/80 font-medium mt-3">
             I&apos;m a Senior Consultant at&nbsp;
             <a
               href="https://www.thoughtworks.com/en-in"
               target="_blank"
               rel="noopener noreferrer"
-              className="underline-offset-2 decoration-1 underline decoration-dotted text-blue-500"
+              className="underline-offset-2 decoration-1 underline decoration-dotted text-folly"
               aria-label="Thoughtworks"
             >
               Thoughtworks
@@ -63,13 +63,13 @@ export default function Home() {
             Golang, Node.js, React, React Native, etc.
           </p>
 
-          <p className="text-custom-black/80 dark:text-baby-powder/80 font-medium mt-3">
+          <p className="text-jet-black/80 dark:text-baby-powder/80 font-medium mt-3">
             I love dropping knowledge and sharing my thoughts over at&nbsp;
             <a
               href="https://vnoit.com/blogs"
               target="_blank"
               rel="noopener noreferrer"
-              className="underline-offset-2 decoration-1 underline decoration-dotted text-blue-500"
+              className="underline-offset-2 decoration-1 underline decoration-dotted text-folly"
               aria-label="Vinoth's blogs"
             >
               vnoit.com/blogs
@@ -77,7 +77,7 @@ export default function Home() {
             . I also make time to teach and mentor people online. If you&apos;re
             curious, check out my profile on&nbsp;
             <a
-              className="underline-offset-2 decoration-1 underline decoration-dotted text-blue-500"
+              className="underline-offset-2 decoration-1 underline decoration-dotted text-folly"
               href="https://www.teacheron.com/tutor/1OZp"
               target="_blank"
               rel="noopener noreferrer"
@@ -91,7 +91,7 @@ export default function Home() {
       </section>
 
       <section className="mb-12">
-        <h2 className="text-custom-black dark:text-baby-powder text-xl font-semibold leading-snug mb-3">
+        <h2 className="text-jet-black dark:text-baby-powder text-xl font-semibold leading-snug mb-3">
           Recent Blogs
         </h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-14">
@@ -113,7 +113,7 @@ export default function Home() {
       </section>
 
       <section className="mb-12">
-        <h2 className="text-custom-black dark:text-baby-powder text-xl font-semibold leading-snug mb-3">
+        <h2 className="text-jet-black dark:text-baby-powder text-xl font-semibold leading-snug mb-3">
           My Projects
         </h2>
         <div className="grid grid-cols-12 gap-5">
@@ -121,9 +121,9 @@ export default function Home() {
             return (
               <div
                 key={index}
-                className="col-span-12 sm:col-span-6 lg:col-span-4 border dark:border-baby-powder/20 border-custom-black/20 rounded-xl shadow-sm p-5"
+                className="col-span-12 sm:col-span-6 lg:col-span-4 border dark:border-baby-powder/20 border-jet-black/20 rounded-xl shadow-sm p-5"
               >
-                <h3 className="font-semibold my-2 underline-offset-2 decoration-1 underline decoration-dotted">
+                <h3 className="font-semibold my-2 underline-offset-2 decoration-1 underline decoration-dotted text-folly">
                   {project.demoLink ? (
                     <a
                       href={project.demoLink}
@@ -137,7 +137,7 @@ export default function Home() {
                     <span>{project.title}</span>
                   )}
                 </h3>
-                <div className="line-clamp-2 text-custom-black dark:text-baby-powder mb-4 min-h-[50px]">
+                <div className="line-clamp-2 text-jet-black dark:text-baby-powder mb-4 min-h-[50px]">
                   <p>{project.description}</p>
                 </div>
                 <div className="flex justify-end gap-4">

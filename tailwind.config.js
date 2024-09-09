@@ -9,9 +9,8 @@ module.exports = {
     extend: {
       colors: {
         "baby-powder": "#FDFFFC",
-        "rich-black": "#011627",
-        "light-sea-green": "#2EC4B6",
-        "custom-black": "#292a2a",
+        "folly": "#FF3366",
+        "jet-black": "#292a2a",
       },
     },
   },

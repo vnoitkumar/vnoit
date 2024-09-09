@@ -46,17 +46,17 @@ function About() {
   return (
     <section className="mx-auto mt-1 max-w-7xl p-6 lg:px-8 block xl:flex gap-20">
       <div className="mb-10 xl:mb-0">
-        <h2 className="text-custom-black dark:text-baby-powder text-3xl font-bold leading-snug">
+        <h2 className="text-jet-black dark:text-baby-powder text-3xl font-bold leading-snug">
           Hey 👋 y&apos;all, I&apos;m Vinoth (Vnoit)!
         </h2>
         <div>
-          <p className="text-custom-black/80 dark:text-baby-powder/80 font-medium mt-3">
+          <p className="text-jet-black/80 dark:text-baby-powder/80 font-medium mt-3">
             I&apos;m a Senior Consultant at&nbsp;
             <a
               href="https://www.thoughtworks.com/en-in"
               target="_blank"
               rel="noopener noreferrer"
-              className="underline-offset-2 decoration-1 underline decoration-dotted text-blue-500"
+              className="underline-offset-2 decoration-1 underline decoration-dotted text-folly"
               aria-label="Thoughtworks"
             >
               Thoughtworks
@@ -65,13 +65,13 @@ function About() {
             Golang, Node.js, React, React Native, etc.
           </p>
 
-          <p className="text-custom-black/80 dark:text-baby-powder/80 font-medium mt-3">
+          <p className="text-jet-black/80 dark:text-baby-powder/80 font-medium mt-3">
             I love dropping knowledge and sharing my thoughts over at&nbsp;
             <a
               href="https://vnoit.com/blogs"
               target="_blank"
               rel="noopener noreferrer"
-              className="underline-offset-2 decoration-1 underline decoration-dotted text-blue-500"
+              className="underline-offset-2 decoration-1 underline decoration-dotted text-folly"
               aria-label="Vinoth's blogs"
             >
               vnoit.com/blogs
@@ -79,7 +79,7 @@ function About() {
             . I also make time to teach and mentor people online. If you&apos;re
             curious, check out my profile on&nbsp;
             <a
-              className="underline-offset-2 decoration-1 underline decoration-dotted text-blue-500"
+              className="underline-offset-2 decoration-1 underline decoration-dotted text-folly"
               href="https://www.teacheron.com/tutor/1OZp"
               target="_blank"
               rel="noopener noreferrer"
@@ -90,19 +90,19 @@ function About() {
             .
           </p>
 
-          <p className="text-custom-black/80 dark:text-baby-powder/80 font-medium mt-3">
+          <p className="text-jet-black/80 dark:text-baby-powder/80 font-medium mt-3">
             I&apos;ve primarily focused on the EdTech and FinTech sectors,
             working on projects aimed at enhancing and optimizing educational
             tools and financial applications.
           </p>
 
-          <p className="text-custom-black/80 dark:text-baby-powder/80 font-medium mt-3">
+          <p className="text-jet-black/80 dark:text-baby-powder/80 font-medium mt-3">
             I have a strong appreciation for color theory and use&nbsp;
             <a
               href="https://coolors.co/"
               target="_blank"
               rel="noopener noreferrer"
-              className="underline-offset-2 decoration-1 underline decoration-dotted text-blue-500"
+              className="underline-offset-2 decoration-1 underline decoration-dotted text-folly"
             >
               Coolors
             </a>
@@ -113,7 +113,7 @@ function About() {
               href="https://vnoit.com/posters"
               target="_blank"
               rel="noopener noreferrer"
-              className="underline-offset-2 decoration-1 underline decoration-dotted text-blue-500"
+              className="underline-offset-2 decoration-1 underline decoration-dotted text-folly"
               aria-label="Vinoth's posters created using Figma"
             >
               vnoit.com/posters
@@ -121,7 +121,7 @@ function About() {
             .
           </p>
 
-          <p className="text-custom-black/80 dark:text-baby-powder/80 font-medium mt-3">
+          <p className="text-jet-black/80 dark:text-baby-powder/80 font-medium mt-3">
             Yep, that&apos;s me&nbsp;
             <span className="inline xl:hidden">at the bottom-</span>
             <span className="hidden xl:inline">on the right-</span>
@@ -131,7 +131,7 @@ function About() {
               aria-label="Vinoth's LinkedIn profile"
               target="_blank"
               rel="noopener noreferrer"
-              className="underline-offset-2 decoration-1 underline decoration-dotted text-blue-500"
+              className="underline-offset-2 decoration-1 underline decoration-dotted text-folly"
             >
               LinkedIn
             </a>
@@ -141,7 +141,7 @@ function About() {
               aria-label="Vinoth's X (formerly Twitter) profile"
               target="_blank"
               rel="noopener noreferrer"
-              className="underline-offset-2 decoration-1 underline decoration-dotted text-blue-500"
+              className="underline-offset-2 decoration-1 underline decoration-dotted text-folly"
             >
               X
             </a>
@@ -151,7 +151,7 @@ function About() {
               aria-label="Vinoth's GitHub profile"
               target="_blank"
               rel="noopener noreferrer"
-              className="underline-offset-2 decoration-1 underline decoration-dotted text-blue-500"
+              className="underline-offset-2 decoration-1 underline decoration-dotted text-folly"
             >
               GitHub
             </a>
@@ -161,13 +161,13 @@ function About() {
               aria-label="Vinoth's Stack Overflow profile"
               target="_blank"
               rel="noopener noreferrer"
-              className="underline-offset-2 decoration-1 underline decoration-dotted text-blue-500"
+              className="underline-offset-2 decoration-1 underline decoration-dotted text-folly"
             >
               Stack Overflow
             </a>
           </p>
 
-          <p className="text-custom-black/60 dark:text-baby-powder/60 font-light text-xs mt-3">
+          <p className="text-jet-black/80 dark:text-baby-powder/80 font-normal text-xs mt-3">
             Last updated at: 8th Sep 2024
           </p>
         </div>
