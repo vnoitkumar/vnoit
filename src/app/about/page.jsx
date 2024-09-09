@@ -110,13 +110,13 @@ function About() {
             posters in Figma and sharing them on X and LinkedIn; you can check
             them all out at&nbsp;
             <a
-              href="https://vnoit.com/posts"
+              href="https://vnoit.com/posters"
               target="_blank"
               rel="noopener noreferrer"
               className="underline-offset-2 decoration-1 underline decoration-dotted text-blue-500"
-              aria-label="Vinoth's posts created using Figma"
+              aria-label="Vinoth's posters created using Figma"
             >
-              vnoit.com/posts
+              vnoit.com/posters
             </a>
             .
           </p>

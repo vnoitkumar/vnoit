@@ -1,10 +1,10 @@
 import Image from "next/image";
 
 export const metadata = {
-  title: "Vinoth (Vnoit) - Posts",
+  title: "Vinoth (Vnoit) - Posters",
   description: "Exploring tech trends, coding tips, and innovation insights.",
   openGraph: {
-    title: "Vinoth (Vnoit) - Posts",
+    title: "Vinoth (Vnoit) - Posters",
     description: "Exploring tech trends, coding tips, and innovation insights.",
     type: "website",
     siteName: "Vnoit",
@@ -31,7 +31,7 @@ export const metadata = {
     ],
   },
   twitter: {
-    title: "Vinoth (Vnoit) - Posts",
+    title: "Vinoth (Vnoit) - Posters",
     description: "Exploring tech trends, coding tips, and innovation insights.",
     card: "summary_large_image",
     creator: "@vnoitkumar",
@@ -42,7 +42,7 @@ export const metadata = {
   },
 };
 
-function Posts() {
+function Posters() {
   // [
   //   'Autocorrection in Git.png',
   //   'EC2 Launch types.png',
@@ -66,7 +66,7 @@ function Posts() {
   //   'ToBoolean Wrapper.png',
   //   'Truthy vs Falsy.png'
   // ]
-  const posts = [
+  const posters = [
     {
       url: "ec2-launch-types/ec2-launch-types.jpg",
       originalImgURL: "ec2-launch-types/ec2-launch-types.png",
@@ -91,14 +91,14 @@ function Posts() {
   return (
     <section className="mb-12 mx-auto mt-1 max-w-7xl p-6 lg:px-8">
       <h2 className="text-custom-black dark:text-baby-powder text-xl font-semibold leading-snug mb-3">
-        All Posts
+        All Posters
       </h2>
       <div className="grid grid-cols-1 gap-12 md:grid-cols-2">
-        {posts.map((post, index) => {
+        {posters.map((post, index) => {
           return (
             <div key={index}>
               <a
-                href={`/assets/images/posts/${post.originalImgURL}`}
+                href={`/assets/images/posters/${post.originalImgURL}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center"
@@ -108,7 +108,7 @@ function Posts() {
                   width={post.width / 3}
                   blurDataURL={post.blurDataURL}
                   placeholder="blur"
-                  src={`/assets/images/posts/${post.url}`}
+                  src={`/assets/images/posters/${post.url}`}
                   alt={post.title}
                   title={post.title}
                 />
@@ -154,4 +154,4 @@ function Posts() {
   );
 }
 
-export default Posts;
+export default Posters;

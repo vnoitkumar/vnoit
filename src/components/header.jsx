@@ -21,7 +21,7 @@ export function Header() {
         <div className="hidden lg:flex lg:gap-x-12">
           <MenuItem name="Home" path="/" />
           <MenuItem name="Blogs" path="/blogs" />
-          <MenuItem name="Posts" path="/posts" />
+          <MenuItem name="Posters" path="/posters" />
           <MenuItem name="About" path="/about" />
         </div>
         {/* <div className="flex flex-1 justify-end">
@@ -58,8 +58,8 @@ export function Header() {
               }
             />
             <MobileMenuItem
-              name="Posts"
-              path="/posts"
+              name="Posters"
+              path="/posters"
               icon={
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
