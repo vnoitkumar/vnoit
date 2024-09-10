@@ -90,7 +90,7 @@ function Posters() {
 
   return (
     <section className="mb-12 mx-auto mt-1 max-w-7xl p-6 lg:px-8">
-      <h2 className="text-jet-black dark:text-baby-powder text-xl font-semibold leading-snug mb-3">
+      <h2 className=" text-xl font-semibold leading-snug mb-3">
         All Posters
       </h2>
       <div className="grid grid-cols-1 gap-12 md:grid-cols-2">
@@ -113,7 +113,7 @@ function Posters() {
                   title={post.title}
                 />
               </a>
-              <p className="flex gap-4 mt-1 text-jet-black dark:text-baby-powder text-base py-5 justify-center">
+              <p className="flex gap-4 mt-1  text-base py-5 justify-center">
                 <span>{post.title}</span>
 
                 {post.artical && (

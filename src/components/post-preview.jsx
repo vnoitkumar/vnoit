@@ -50,7 +50,7 @@ function PostPreview({
           <Link
             href={`/blogs/${slug}`}
             aria-label={`Read more about ${trimTitle(title)}`}
-            className="text-jet-black dark:text-baby-powder text-2xl font-bold leading-snug hover:underline decoration-folly decoration-2 underline-offset-2"
+            className=" text-2xl font-bold leading-snug hover:underline dark:decoration-violet-300 decoration-violet-700 decoration-2 underline-offset-2"
           >
             {title}
           </Link>

@@ -46,7 +46,7 @@ function About() {
   return (
     <section className="mx-auto mt-1 max-w-7xl p-6 lg:px-8 block xl:flex gap-20">
       <div className="mb-10 xl:mb-0">
-        <h2 className="text-jet-black dark:text-baby-powder text-3xl font-bold leading-snug">
+        <h2 className=" text-3xl font-bold leading-snug">
           Hey 👋 y&apos;all, I&apos;m Vinoth (Vnoit)!
         </h2>
         <div>
@@ -56,7 +56,7 @@ function About() {
               href="https://www.thoughtworks.com/en-in"
               target="_blank"
               rel="noopener noreferrer"
-              className="underline-offset-2 decoration-1 underline decoration-dotted text-folly"
+              className="link"
               aria-label="Thoughtworks"
             >
               Thoughtworks
@@ -71,7 +71,7 @@ function About() {
               href="https://vnoit.com/blogs"
               target="_blank"
               rel="noopener noreferrer"
-              className="underline-offset-2 decoration-1 underline decoration-dotted text-folly"
+              className="link"
               aria-label="Vinoth's blogs"
             >
               vnoit.com/blogs
@@ -79,7 +79,7 @@ function About() {
             . I also make time to teach and mentor people online. If you&apos;re
             curious, check out my profile on&nbsp;
             <a
-              className="underline-offset-2 decoration-1 underline decoration-dotted text-folly"
+              className="link"
               href="https://www.teacheron.com/tutor/1OZp"
               target="_blank"
               rel="noopener noreferrer"
@@ -102,7 +102,7 @@ function About() {
               href="https://coolors.co/"
               target="_blank"
               rel="noopener noreferrer"
-              className="underline-offset-2 decoration-1 underline decoration-dotted text-folly"
+              className="link"
             >
               Coolors
             </a>
@@ -113,7 +113,7 @@ function About() {
               href="https://vnoit.com/posters"
               target="_blank"
               rel="noopener noreferrer"
-              className="underline-offset-2 decoration-1 underline decoration-dotted text-folly"
+              className="link"
               aria-label="Vinoth's posters created using Figma"
             >
               vnoit.com/posters
@@ -131,7 +131,7 @@ function About() {
               aria-label="Vinoth's LinkedIn profile"
               target="_blank"
               rel="noopener noreferrer"
-              className="underline-offset-2 decoration-1 underline decoration-dotted text-folly"
+              className="link"
             >
               LinkedIn
             </a>
@@ -141,7 +141,7 @@ function About() {
               aria-label="Vinoth's X (formerly Twitter) profile"
               target="_blank"
               rel="noopener noreferrer"
-              className="underline-offset-2 decoration-1 underline decoration-dotted text-folly"
+              className="link"
             >
               X
             </a>
@@ -151,7 +151,7 @@ function About() {
               aria-label="Vinoth's GitHub profile"
               target="_blank"
               rel="noopener noreferrer"
-              className="underline-offset-2 decoration-1 underline decoration-dotted text-folly"
+              className="link"
             >
               GitHub
             </a>
@@ -161,7 +161,7 @@ function About() {
               aria-label="Vinoth's Stack Overflow profile"
               target="_blank"
               rel="noopener noreferrer"
-              className="underline-offset-2 decoration-1 underline decoration-dotted text-folly"
+              className="link"
             >
               Stack Overflow
             </a>

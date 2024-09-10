@@ -74,7 +74,7 @@ export function FullLogo() {
         <g clipPath="url(#h)">
           <path
             fill="currentColor"
-            className="fill-folly"
+            className="dark:fill-violet-300 fill-violet-700"
             d="M529.73 46.637h57.086v57.086H529.73zm0 0"
           ></path>
         </g>

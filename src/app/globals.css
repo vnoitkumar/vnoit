@@ -2,35 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground: #292a2a;
-  --background: #fdfffc;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground: #fdfffc;
-    --background: #292a2a;
-  }
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.link {
+  @apply underline-offset-2 decoration-1 underline decoration-dotted dark:text-violet-300 text-violet-700 
 }
 
 .markdown {
-  @apply text-lg leading-relaxed;
+  @apply text-lg leading-relaxed text-jet-black dark:text-baby-powder;
 }
 
 .markdown h2 {
-  @apply text-2xl lg:text-3xl mt-12 mb-4 leading-snug font-semibold text-jet-black dark:text-baby-powder;
+  @apply text-2xl lg:text-3xl mt-12 mb-4 leading-snug font-semibold;
 }
 
 .markdown h3 {
@@ -38,7 +19,7 @@ body {
 }
 
 .markdown a {
-  @apply underline-offset-2 decoration-1 underline decoration-dotted max-w-full overflow-auto inline-block align-bottom text-folly;
+  @apply underline-offset-2 decoration-1 underline decoration-dotted dark:text-violet-300 text-violet-700 max-w-full overflow-auto inline-block align-bottom;
 }
 
 .markdown li {
@@ -53,5 +34,5 @@ body {
 .markdown ul,
 .markdown ol,
 .markdown blockquote {
-  @apply my-6 text-jet-black dark:text-baby-powder;
+  @apply my-6;
 }

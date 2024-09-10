@@ -13,15 +13,13 @@ function MobileMenuItem(props) {
     <Link
       aria-label={`${name} page`}
       href={path}
-      className="inline-flex flex-col items-center justify-center font-medium px-5 group"
+      className={`inline-flex flex-col items-center justify-center font-medium px-5 pb-2 ${
+        isActive ? "border-t-4 dark:border-violet-300 border-violet-700 pt-[4px]" : "border-none pt-2"
+      }`}
     >
       {icon}
       <span
-        className={`text-sm group-hover:text-folly dark:group-hover:text-folly ${
-          isActive
-            ? "text-folly"
-            : "text-jet-black/80 dark:text-baby-powder/80"
-        }`}
+        className={`text-sm`}
       >
         {name}
       </span>

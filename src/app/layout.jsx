@@ -55,9 +55,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={workSans.className}>
-      <body className="bg-baby-powder dark:bg-jet-black">
+      <body className="text-jet-black dark:text-baby-powder bg-baby-powder dark:bg-jet-black">
         <Header />
-        <main className="min-h-[calc(100vh-460px)] lg:min-h-[calc(100vh-400px)]">{children}</main>
+        <main className="min-h-[calc(100vh-380px)] lg:min-h-[calc(100vh-300px)]">{children}</main>
         <Footer />
       </body>
     </html>

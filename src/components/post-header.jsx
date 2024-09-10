@@ -46,7 +46,7 @@ export function PostHeader({
           priority
         />
 
-        <h1 className="text-2xl lg:text-4xl font-bold text-jet-black dark:text-baby-powder max-w-5xl leading-snug">
+        <h1 className="text-2xl lg:text-4xl font-bold  max-w-5xl leading-snug">
           {title}
         </h1>
         {/* <p className="sm:block hidden text-base lg:text-lg font-medium text-jet-black/80 dark:text-baby-powder/80 max-w-3xl">

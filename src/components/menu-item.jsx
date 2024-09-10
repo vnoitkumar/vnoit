@@ -13,7 +13,7 @@ function MenuItem(props) {
     <Link
       aria-label={`${name} page`}
       href={path}
-      className={`text-base font-semibold leading-6 text-jet-black dark:text-baby-powder decoration-folly decoration-2 underline-offset-2 ${
+      className={`text-base font-semibold leading-6  dark:decoration-violet-300 decoration-violet-700 decoration-2 underline-offset-2 ${
         isActive ? "underline" : ""
       }`}
     >
