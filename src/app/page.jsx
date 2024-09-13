@@ -42,7 +42,7 @@ export default function Home() {
   const recentPosts = getRecentPosts();
 
   return (
-    <section className="mx-auto mt-1 max-w-7xl p-6 lg:px-8">
+    <section className="mx-auto mt-3 max-w-7xl p-6 lg:px-8">
       <section className="mb-12">
         <h2 className="text-3xl font-bold leading-snug">
           Hey 👋 y&apos;all, I&apos;m Vinoth (Vnoit)!

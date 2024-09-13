@@ -10,7 +10,7 @@ export function Header() {
     <header>
       <nav
         aria-label="Global"
-        className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
+        className="mx-auto flex max-w-7xl items-center justify-between px-6 lg:px-8 mt-6"
       >
         <div className="flex lg:flex-1">
           <Link href="/" className="-m-1.5 p-1.5" aria-label="Home page">
@@ -22,12 +22,12 @@ export function Header() {
           <MenuItem name="Home" path="/" />
           <MenuItem name="Blogs" path="/blogs" />
           {/* <MenuItem name="Posters" path="/posters" /> */}
-          <MenuItem name="About" path="/about" />
+          <MenuItem name="About" path="/about" /> 
         </div>
         {/* <div className="flex flex-1 justify-end">
           <ThemeMenu />
         </div> */}
-        <div className="fixed bottom-0 left-0 z-50 w-full h-20 border-t border-jet-black/20 dark:border-baby-powder/20 bg-baby-powder dark:bg-jet-black block lg:hidden">
+        <div className="fixed bottom-0 left-0 z-50 w-full h-16 border-t border-jet-black/20 dark:border-baby-powder/20 bg-baby-powder dark:bg-jet-black block lg:hidden">
           <div className="grid h-full max-w-lg grid-cols-3 mx-auto">
             <MobileMenuItem
               name="Home"

@@ -1,6 +1,6 @@
 export function FullLogo() {
   return (
-    <svg version="1" viewBox="0 0 750 375" height={60}>
+    <svg version="1" viewBox="0 0 750 375" height={50}>
       <defs>
         <path
           id="reuse-0"

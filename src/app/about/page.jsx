@@ -44,7 +44,7 @@ export const metadata = {
 
 function About() {
   return (
-    <section className="mx-auto mt-1 max-w-7xl p-6 lg:px-8 block xl:flex gap-20">
+    <section className="mx-auto mt-3 max-w-7xl p-6 lg:px-8 block xl:flex gap-20">
       <div className="mb-10 xl:mb-0">
         <h2 className=" text-3xl font-bold leading-snug">
           Hey 👋 y&apos;all, I&apos;m Vinoth (Vnoit)!

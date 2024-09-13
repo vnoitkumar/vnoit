@@ -89,7 +89,7 @@ function Posters() {
   ];
 
   return (
-    <section className="mb-12 mx-auto mt-1 max-w-7xl p-6 lg:px-8">
+    <section className="mb-12 mx-auto mt-3 max-w-7xl p-6 lg:px-8">
       <h2 className=" text-xl font-semibold leading-snug mb-3">
         All Posters
       </h2>

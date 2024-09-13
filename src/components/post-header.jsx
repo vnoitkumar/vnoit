@@ -14,7 +14,7 @@ export function PostHeader({
   coverImageBlurHash
 }) {
   return (
-    <section className="mx-auto mt-1 max-w-7xl p-6 lg:px-8">
+    <section className="mx-auto mt-3 max-w-7xl p-6 lg:px-8">
       <div className="flex flex-col gap-4 items-center justify-center text-center">
         {/* <div className="flex w-full justify-center item-center md:mb-3">
           <div className="hidden md:flex gap-2.5 justify-start items-center h-12 px-7 py-3.5 rounded-3xl border border-jet-black/15 dark:border-baby-powder/15">
