@@ -21,12 +21,6 @@ export default function sitemap() {
       priority: 0.5,
     },
     {
-      url: `${baseBath}/posters`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.8,
-    },
-    {
       url: `${baseBath}/blogs/aws-es2-Instance-purchasing-options`,
       lastModified: new Date(),
       changeFrequency: "yearly",
