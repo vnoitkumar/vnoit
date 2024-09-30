@@ -36,3 +36,7 @@
 .markdown blockquote {
   @apply my-6;
 }
+
+.markdown pre {
+  @apply p-4 rounded-md overflow-x-auto text-base;
+}
