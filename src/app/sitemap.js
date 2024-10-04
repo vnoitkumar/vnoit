@@ -21,7 +21,7 @@ export default function sitemap() {
       priority: 0.5,
     },
     {
-      url: `${baseBath}/blogs/aws-es2-Instance-purchasing-options`,
+      url: `${baseBath}/blogs/mastering-nodejs-module-alias-setup`,
       lastModified: new Date(),
       changeFrequency: "yearly",
       priority: 1,

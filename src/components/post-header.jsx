@@ -11,50 +11,57 @@ export function PostHeader({
   author,
   coverImage,
   readTime,
-  coverImageBlurHash
+  coverImageBlurHash,
 }) {
   return (
-    <section className="mx-auto mt-3 max-w-7xl p-6 lg:px-8">
-      <div className="flex flex-col gap-4 items-center justify-center text-center">
-        {/* <div className="flex w-full justify-center item-center md:mb-3">
-          <div className="hidden md:flex gap-2.5 justify-start items-center h-12 px-7 py-3.5 rounded-3xl border border-jet-black/15 dark:border-baby-powder/15">
-            <Link
-              className="text-jet-black/80 dark:text-baby-powder/80 text-base font-medium"
-              href="/"
-            >
-              Blog
-            </Link>
-            <Arrow />
-            <span className="text-jet-black/80 dark:text-baby-powder/80 text-base font-medium">
-              Posts
-            </span>
-            <Arrow />
-            <span className="text-jet-black/80 dark:text-baby-powder/80 text-base font-bold">
-              {trimTitle(title)}
-            </span>
-          </div>
-        </div> */}
-
+    <>
+      <div className="flex items-center justify-center mt-6 lg:mt-10">
         <Image
-          className="rounded-md mb-4"
+          className="rounded-none md:rounded-md"
           src={coverImage}
-          height={500}
-          width={1000}
+          height={630}
+          width={1200}
           alt={title}
           placeholder="blur"
           blurDataURL={coverImageBlurHash}
           priority
         />
+      </div>
+      <section className="mx-auto max-w-7xl p-6 lg:px-8">
+        <div className="flex flex-col md:gap-4 items-center justify-center text-center">
+          <div className="flex w-full justify-center item-center md:mb-3">
+            <div className="hidden md:flex gap-2.5 justify-start items-center h-12 px-7 py-3.5 rounded-3xl border border-jet-black/15 dark:border-baby-powder/15">
+              <Link
+                className="text-jet-black/80 dark:text-baby-powder/80 text-base font-medium"
+                href="/"
+              >
+                Home
+              </Link>
+              <Arrow />
+              <span className="text-jet-black/80 dark:text-baby-powder/80 text-base font-medium">
+                <Link
+                  className="text-jet-black/80 dark:text-baby-powder/80 text-base font-medium"
+                  href="/blogs"
+                >
+                  Blogs
+                </Link>
+              </span>
+              <Arrow />
+              <span className="text-jet-black/80 dark:text-baby-powder/80 text-base font-bold">
+                {trimTitle(title)}
+              </span>
+            </div>
+          </div>
+          <h1 className="text-2xl lg:text-4xl font-bold max-w-5xl leading-snug">
+            {title}
+          </h1>
+          <p className="sm:block hidden text-base lg:text-lg font-medium text-jet-black/80 dark:text-baby-powder/80 max-w-5xl">
+            {excerpt}
+          </p>
 
-        <h1 className="text-2xl lg:text-4xl font-bold  max-w-5xl leading-snug">
-          {title}
-        </h1>
-        {/* <p className="sm:block hidden text-base lg:text-lg font-medium text-jet-black/80 dark:text-baby-powder/80 max-w-3xl">
-          {excerpt}
-        </p> */}
-        <div className="justify-center items-center gap-4 flex flex-col md:flex-row">
-          <div className="justify-start items-center gap-2 flex">
-            {/* <div>
+          <div className="justify-center items-center gap-4 flex flex-col md:flex-row">
+            <div className="justify-start items-center gap-2 flex">
+              {/* <div>
               <Image
                 className="rounded-full"
                 width={50}
@@ -64,14 +71,17 @@ export function PostHeader({
               />
             </div> */}
 
-            <div className="text-jet-black/80 dark:text-baby-powder/80 text-sm">
-              {/* {author.name} -  */}
-              <DateFormatter dateString={date} /> &nbsp;.&nbsp; {readTime}
+              <div className="text-sm">
+                {/* <div className="text-jet-black dark:text-baby-powder text-left">{author.name}</div> */}
+                <div className="text-jet-black/80 dark:text-baby-powder/80 mt-3 md:mt-0">
+                  <DateFormatter dateString={date} /> &nbsp;.&nbsp; {readTime}
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 
   function Arrow() {

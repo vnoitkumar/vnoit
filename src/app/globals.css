@@ -40,3 +40,7 @@
 .markdown pre {
   @apply p-4 rounded-md overflow-x-auto text-base;
 }
+
+.markdown code {
+  /* @apply italic; */
+}

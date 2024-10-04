@@ -22,8 +22,8 @@ function PostPreview({
       >
         <Image
           src={coverImage}
-          height={500}
-          width={1000}
+          height={630}
+          width={1200}
           alt={title}
           placeholder="blur"
           loading="lazy"

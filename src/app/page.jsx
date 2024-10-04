@@ -1,6 +1,5 @@
 import { getRecentPosts } from "@/lib/api";
 import PostPreview from "@/components/post-preview";
-import Link from "next/link";
 
 const projects = [
   {

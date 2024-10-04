@@ -3,7 +3,7 @@ import FullLogo from "@/components/full-logo";
 
 export function Footer() {
   return (
-    <footer className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8 lg:mb-0 mt-10 mb-16">
+    <footer className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8 lg:mb-0 mt-20 mb-16">
       <div className="flex lg:flex-1">
         <Link href="/" className="-m-1.5 p-1.5" aria-label="Home page">
           <span className="sr-only">Vnoit</span>
