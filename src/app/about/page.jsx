@@ -107,7 +107,27 @@ function About() {
               Coolors
             </a>
             &nbsp;to select color palettes for my projects. I enjoy designing
-            posters in Figma and sharing them on X and LinkedIn.
+            posters in Figma and sharing them on{" "}
+            <a
+              href="https://x.com/vnoitkumar"
+              aria-label="Vinoth's X (formerly Twitter) profile"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="link"
+            >
+              X
+            </a>{" "}
+            and{" "}
+            <a
+              href="https://www.linkedin.com/in/vnoitkumar"
+              aria-label="Vinoth's LinkedIn profile"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="link"
+            >
+              LinkedIn
+            </a>
+            .
           </p>
 
           <p className="text-jet-black/80 dark:text-baby-powder/80 font-medium mt-3">
