@@ -33,7 +33,6 @@ We'll assume this is how our project structure looks before we begin.
 ├── jest.config.js
 ├── package-lock.json
 ├── package.json
-├── package.json
 └── src
    ├── components
    ├── config
