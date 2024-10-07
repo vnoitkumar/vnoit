@@ -1,6 +1,7 @@
 import { Work_Sans } from "next/font/google";
 import Footer from "@/components/footer";
 import Header from "@/components/header";
+import GoogleAnalytics from "@/components/google-analytics";
 import "./globals.css";
 
 const workSans = Work_Sans({
@@ -55,6 +56,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={workSans.className}>
+      <GoogleAnalytics />
       <body className="text-jet-black dark:text-baby-powder bg-baby-powder dark:bg-jet-black">
         <Header />
         <main className="min-h-[calc(100vh-300px)] lg:min-h-[calc(100vh-230px)]">{children}</main>
