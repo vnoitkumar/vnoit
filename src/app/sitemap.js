@@ -26,5 +26,13 @@ export default function sitemap() {
       changeFrequency: "yearly",
       priority: 1,
     },
+    {
+      url: `${baseBath}/blogs/why-mockoon-is-the-api-tool-you-didnt-know-you-needed`,
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+      priority: 1,
+    },
+
+    
   ];
 }
