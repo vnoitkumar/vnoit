@@ -1,23 +1,24 @@
 import fs from "fs";
 import matter from "gray-matter";
 import { join } from "path";
+import type { BlogPost } from "@/types/blog";
 
 const blogPostsDirectory = join(process.cwd(), "_blog_posts");
 
-export function getBlogPostSlugs() {
+export function getBlogPostSlugs(): string[] {
   return fs.readdirSync(blogPostsDirectory);
 }
 
-export function getBlogPostBySlug(slug) {
+export function getBlogPostBySlug(slug: string): BlogPost {
   const realSlug = slug.replace(/\.md$/, "");
   const fullPath = join(blogPostsDirectory, `${realSlug}.md`);
   const fileContents = fs.readFileSync(fullPath, "utf8");
   const { data, content } = matter(fileContents);
 
-  return { ...data, slug: realSlug, content };
+  return { ...(data as Omit<BlogPost, "slug" | "content">), slug: realSlug, content };
 }
 
-export function getAllBlogPosts() {
+export function getAllBlogPosts(): BlogPost[] {
   const slugs = getBlogPostSlugs();
   const blogPosts = slugs
     .map((slug) => getBlogPostBySlug(slug))
@@ -25,7 +26,7 @@ export function getAllBlogPosts() {
   return blogPosts;
 }
 
-export function getRecentPosts() {
+export function getRecentPosts(): BlogPost[] {
   const slugs = getBlogPostSlugs();
   const blogPosts = slugs
     .slice(0, 3)

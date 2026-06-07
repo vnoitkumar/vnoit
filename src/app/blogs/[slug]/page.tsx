@@ -1,11 +1,15 @@
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getAllBlogPosts, getBlogPostBySlug } from "@/lib/api";
 import markdownToHtml from "@/lib/markdownToHtml";
 import { PostBody } from "@/components/post-body";
 import { PostHeader } from "@/components/post-header";
 
-export default async function Post({ params }) {
-  const post = getBlogPostBySlug(params.slug);
+type Params = Promise<{ slug: string }>;
+
+export default async function Post({ params }: { params: Params }) {
+  const { slug } = await params;
+  const post = getBlogPostBySlug(slug);
 
   if (!post) {
     return notFound();
@@ -24,17 +28,18 @@ export default async function Post({ params }) {
         readTime={post.readTime}
         coverImageBlurHash={post.coverImageBlurHash}
       />
-      <PostBody
-        content={content}
-        coverImage={post.coverImage}
-        title={post.title}
-      />
+      <PostBody content={content} />
     </article>
   );
 }
 
-export function generateMetadata({ params }) {
-  const post = getBlogPostBySlug(params.slug);
+export async function generateMetadata({
+  params,
+}: {
+  params: Params;
+}): Promise<Metadata> {
+  const { slug } = await params;
+  const post = getBlogPostBySlug(slug);
 
   if (!post) {
     return notFound();
@@ -46,9 +51,9 @@ export function generateMetadata({ params }) {
     openGraph: {
       title: `${post.title} | Vnoit`,
       description: post.excerpt,
-      type: "website",
+      type: "article",
       siteName: "Vnoit",
-      url: `https://vnoit.com/blogs/${params.slug}`,
+      url: `https://vnoit.com/blogs/${slug}`,
       images: [post.ogImage.url],
       authors: [post.author.name],
     },
@@ -62,7 +67,7 @@ export function generateMetadata({ params }) {
   };
 }
 
-export async function generateStaticParams() {
+export function generateStaticParams() {
   const posts = getAllBlogPosts();
 
   return posts.map((post) => ({

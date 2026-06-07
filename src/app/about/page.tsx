@@ -1,6 +1,8 @@
+import type { Metadata } from "next";
 import Image from "next/image";
+import Intro from "@/components/intro";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Vinoth (Vnoit) - About",
   description: "Exploring tech trends, coding tips, and innovation insights.",
   openGraph: {
@@ -46,54 +48,18 @@ function About() {
   return (
     <section className="mx-auto mt-3 max-w-7xl p-6 lg:px-8 block xl:flex gap-20">
       <div className="mb-10 xl:mb-0">
-        <h2 className=" text-3xl font-bold leading-snug">
-          Hey 👋 y&apos;all, I&apos;m Vinoth (Vnoit)!
-        </h2>
+        <Intro />
         <div>
           <p className="text-jet-black/80 dark:text-baby-powder/80 font-medium mt-3">
-            I&apos;m a Senior Consultant at&nbsp;
-            <a
-              href="https://www.thoughtworks.com/en-in"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="link"
-              aria-label="Thoughtworks"
-            >
-              Thoughtworks
-            </a>
-            &nbsp;in Bengaluru, India, capable of crafting applications with
-            Golang, Node.js, React, React Native, etc.
-          </p>
-
-          <p className="text-jet-black/80 dark:text-baby-powder/80 font-medium mt-3">
-            I love dropping knowledge and sharing my thoughts over at&nbsp;
-            <a
-              href="https://vnoit.com/blogs"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="link"
-              aria-label="Vinoth's blogs"
-            >
-              vnoit.com/blogs
-            </a>
-            . I also make time to teach and mentor people online. If you&apos;re
-            curious, check out my profile on&nbsp;
-            <a
-              className="link"
-              href="https://www.teacheron.com/tutor/1OZp"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Vinoth's TeacherOn profile"
-            >
-              TeacherOn
-            </a>
-            .
-          </p>
-
-          <p className="text-jet-black/80 dark:text-baby-powder/80 font-medium mt-3">
-            I&apos;ve primarily focused on the EdTech and FinTech sectors,
-            working on projects aimed at enhancing and optimizing educational
-            tools and financial applications.
+            My career has spanned a few industries. I started in Chennai,
+            working on EdTech products before moving into FinTech with a
+            peer-to-peer lending app, and later returning to EdTech for a UAE
+            client alongside a white-label OTT product. I joined Thoughtworks
+            while still in Chennai and spent four years on a major Indian
+            bank&apos;s web, mobile, and backend systems, relocating to
+            Bengaluru mid-2022 partway through. From there I moved to a
+            cross-border payments platform for a Dubai client, and I&apos;m
+            currently working in energy commerce.
           </p>
 
           <p className="text-jet-black/80 dark:text-baby-powder/80 font-medium mt-3">
@@ -177,7 +143,7 @@ function About() {
           </p>
 
           <p className="text-jet-black/80 dark:text-baby-powder/80 font-normal text-xs mt-3">
-            Last updated at: 8th Sep 2024
+            Last updated at: 29th May 2026
           </p>
         </div>
       </div>

@@ -1,3 +1,5 @@
+import type { Metadata } from "next";
+import type { ReactNode } from "react";
 import { Work_Sans } from "next/font/google";
 import Footer from "@/components/footer";
 import Header from "@/components/header";
@@ -9,7 +11,7 @@ const workSans = Work_Sans({
   display: "swap",
 });
 
-export const metadata = {
+export const metadata: Metadata = {
   metadataBase: new URL("https://vnoit.com"),
   title: "Vinoth (Vnoit)",
   description: "Exploring tech trends, coding tips, and innovation insights.",
@@ -50,12 +52,12 @@ export const metadata = {
       alt: "Vinoth (Vnoit)",
     },
   },
-  assets: ['https://vnoit.com/assets'],
+  assets: ["https://vnoit.com/assets"],
 };
 
-export default function RootLayout({ children }) {
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="en" className={workSans.className}>
+    <html lang="en" className={workSans.className} suppressHydrationWarning>
       <GoogleAnalytics />
       <body className="text-jet-black dark:text-baby-powder bg-baby-powder dark:bg-jet-black">
         <Header />

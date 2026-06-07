@@ -1,46 +1,47 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-.link {
-  @apply underline-offset-2 decoration-1 underline decoration-dotted dark:text-violet-300 text-violet-700 
+@theme {
+  --color-baby-powder: #FDFFFC;
+  --color-jet-black: #232931;
 }
 
-.markdown {
-  @apply text-lg leading-relaxed text-jet-black dark:text-baby-powder;
-}
+@layer components {
+  .link {
+    @apply underline-offset-2 decoration-1 underline decoration-dotted dark:text-violet-300 text-violet-700;
+  }
 
-.markdown h2 {
-  @apply text-2xl lg:text-3xl mt-12 mb-4 leading-snug font-semibold;
-}
+  .markdown {
+    @apply text-lg leading-relaxed text-jet-black dark:text-baby-powder;
+  }
 
-.markdown h3 {
-  @apply text-xl lg:text-2xl mt-8 mb-4 leading-snug;
-}
+  .markdown h2 {
+    @apply text-2xl lg:text-3xl mt-12 mb-4 leading-snug font-semibold;
+  }
 
-.markdown a {
-  @apply underline-offset-2 decoration-1 underline decoration-dotted dark:text-violet-300 text-violet-700 max-w-full overflow-auto inline-block align-bottom;
-}
+  .markdown h3 {
+    @apply text-xl lg:text-2xl mt-8 mb-4 leading-snug;
+  }
 
-.markdown li {
-  @apply list-disc list-inside mb-2;
-}
+  .markdown a {
+    @apply underline-offset-2 decoration-1 underline decoration-dotted dark:text-violet-300 text-violet-700 max-w-full overflow-auto inline-block align-bottom;
+  }
 
-.markdown img {
-  @apply rounded-md;
-}
+  .markdown li {
+    @apply list-disc list-inside mb-2;
+  }
 
-.markdown p,
-.markdown ul,
-.markdown ol,
-.markdown blockquote {
-  @apply my-6;
-}
+  .markdown img {
+    @apply rounded-md;
+  }
 
-.markdown pre {
-  @apply p-4 rounded-md overflow-x-auto text-base;
-}
+  .markdown p,
+  .markdown ul,
+  .markdown ol,
+  .markdown blockquote {
+    @apply my-6;
+  }
 
-.markdown code {
-  /* @apply italic; */
+  .markdown pre {
+    @apply p-4 rounded-md overflow-x-auto text-base;
+  }
 }

@@ -1,7 +1,8 @@
+import type { Metadata } from "next";
 import { getAllBlogPosts } from "@/lib/api";
 import PostPreview from "@/components/post-preview";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Vinoth (Vnoit) - Blogs",
   description: "Exploring tech trends, coding tips, and innovation insights.",
   openGraph: {

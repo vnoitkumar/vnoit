@@ -1,7 +1,6 @@
 import Link from "next/link";
 
 import FullLogo from "@/components/full-logo";
-import ThemeMenu from "@/components/theme-menu";
 import MenuItem from "@/components/menu-item";
 import MobileMenuItem from "@/components/mobile-menu-item";
 
@@ -21,11 +20,8 @@ export function Header() {
         <div className="hidden lg:flex lg:gap-x-12">
           <MenuItem name="Home" path="/" />
           <MenuItem name="Blogs" path="/blogs" />
-          <MenuItem name="About" path="/about" /> 
+          <MenuItem name="About" path="/about" />
         </div>
-        {/* <div className="flex flex-1 justify-end">
-          <ThemeMenu />
-        </div> */}
         <div className="fixed bottom-0 left-0 z-50 w-full h-16 border-t border-jet-black/20 dark:border-baby-powder/20 bg-baby-powder dark:bg-jet-black block lg:hidden">
           <div className="grid h-full max-w-lg grid-cols-3 mx-auto">
             <MobileMenuItem

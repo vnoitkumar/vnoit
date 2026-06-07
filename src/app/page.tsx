@@ -1,7 +1,15 @@
 import { getRecentPosts } from "@/lib/api";
+import Intro from "@/components/intro";
 import PostPreview from "@/components/post-preview";
 
-const projects = [
+interface Project {
+  title: string;
+  description: string;
+  demoLink?: string;
+  gitHubLink?: string;
+}
+
+const projects: Project[] = [
   {
     title: "Code Snap",
     description: "Share your source code in image formate",
@@ -43,50 +51,7 @@ export default function Home() {
   return (
     <section className="mx-auto mt-3 max-w-7xl p-6 lg:px-8">
       <section className="mb-12">
-        <h2 className="text-3xl font-bold leading-snug">
-          Hey 👋 y&apos;all, I&apos;m Vinoth (Vnoit)!
-        </h2>
-        <div>
-          <p className="text-jet-black/80 dark:text-baby-powder/80 font-medium mt-3">
-            I&apos;m a Senior Consultant at&nbsp;
-            <a
-              href="https://www.thoughtworks.com/en-in"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="link"
-              aria-label="Thoughtworks"
-            >
-              Thoughtworks
-            </a>
-            &nbsp;in Bengaluru, India, capable of crafting applications with
-            Golang, Node.js, React, React Native, etc.
-          </p>
-
-          <p className="text-jet-black/80 dark:text-baby-powder/80 font-medium mt-3">
-            I love dropping knowledge and sharing my thoughts over at&nbsp;
-            <a
-              href="https://vnoit.com/blogs"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="link"
-              aria-label="Vinoth's blogs"
-            >
-              vnoit.com/blogs
-            </a>
-            . I also make time to teach and mentor people online. If you&apos;re
-            curious, check out my profile on&nbsp;
-            <a
-              className="link"
-              href="https://www.teacheron.com/tutor/1OZp"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Vinoth's TeacherOn profile"
-            >
-              TeacherOn
-            </a>
-            .
-          </p>
-        </div>
+        <Intro />
       </section>
 
       <section className="mb-12">

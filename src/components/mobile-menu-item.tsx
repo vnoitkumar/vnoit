@@ -1,13 +1,17 @@
 "use client";
 
 import Link from "next/link";
-
 import { usePathname } from "next/navigation";
+import type { ReactNode } from "react";
 
-function MobileMenuItem(props) {
+interface MobileMenuItemProps {
+  path: string;
+  name: string;
+  icon: ReactNode;
+}
+
+function MobileMenuItem({ path, name, icon }: MobileMenuItemProps) {
   const pathname = usePathname();
-
-  const { path, name, icon } = props;
   const isActive = path === pathname;
   return (
     <Link
@@ -18,11 +22,7 @@ function MobileMenuItem(props) {
       }`}
     >
       {icon}
-      <span
-        className={`text-sm leading-none `}
-      >
-        {name}
-      </span>
+      <span className={`text-sm leading-none `}>{name}</span>
     </Link>
   );
 }

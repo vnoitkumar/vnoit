@@ -2,6 +2,19 @@ import Link from "next/link";
 import DateFormatter from "@/components/date-formatter";
 import Image from "next/image";
 import { trimTitle } from "@/utils/utils";
+import type { BlogPost } from "@/types/blog";
+
+type PostPreviewProps = Pick<
+  BlogPost,
+  | "title"
+  | "coverImage"
+  | "coverImageBlurHash"
+  | "date"
+  | "excerpt"
+  | "author"
+  | "slug"
+  | "readTime"
+> & { tag?: string };
 
 function PostPreview({
   title,
@@ -9,10 +22,9 @@ function PostPreview({
   coverImageBlurHash,
   date,
   excerpt,
-  author,
   slug,
   readTime,
-}) {
+}: PostPreviewProps) {
   return (
     <div className="flex-col justify-start items-start gap-5 inline-flex hover-up">
       <Link
@@ -33,15 +45,7 @@ function PostPreview({
       <div className="flex-col justify-start items-start gap-3 flex">
         <div className="justify-start items-center gap-5 inline-flex">
           <div className="justify-start items-center gap-2 flex">
-            {/* <Image
-              className="rounded-full"
-              height={36}
-              width={36}
-              src={author.picture}
-              alt={author.name}
-            /> */}
             <div className="text-jet-black/80 dark:text-baby-powder/80 text-sm font-medium leading-none">
-              {/* {author.name} -  */}
               <DateFormatter dateString={date} /> &nbsp;.&nbsp; {readTime}
             </div>
           </div>

@@ -1,13 +1,15 @@
 "use client";
 
 import Link from "next/link";
-
 import { usePathname } from "next/navigation";
 
-function MenuItem(props) {
-  const pathname = usePathname();
+interface MenuItemProps {
+  path: string;
+  name: string;
+}
 
-  const { path, name } = props;
+function MenuItem({ path, name }: MenuItemProps) {
+  const pathname = usePathname();
   const isActive = path === pathname;
   return (
     <Link

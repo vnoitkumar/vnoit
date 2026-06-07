@@ -1,6 +1,8 @@
+import type { MetadataRoute } from "next";
+
 const baseBath = "https://vnoit.com";
 
-export default function sitemap() {
+export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
       url: baseBath,
@@ -32,7 +34,5 @@ export default function sitemap() {
       changeFrequency: "yearly",
       priority: 1,
     },
-
-    
   ];
 }
