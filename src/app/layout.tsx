@@ -14,10 +14,12 @@ const workSans = Work_Sans({
 export const metadata: Metadata = {
   metadataBase: new URL("https://vnoit.com"),
   title: "Vinoth (Vnoit)",
-  description: "Exploring tech trends, coding tips, and innovation insights.",
+  description:
+    "Vinoth (Vnoit) — Lead Consultant at Thoughtworks in Bengaluru. Writing on software craft, engineering across the stack, and building products that last.",
   openGraph: {
     title: "Vinoth (Vnoit)",
-    description: "Exploring tech trends, coding tips, and innovation insights.",
+    description:
+    "Vinoth (Vnoit) — Lead Consultant at Thoughtworks in Bengaluru. Writing on software craft, engineering across the stack, and building products that last.",
     type: "website",
     siteName: "Vnoit",
     url: "https://vnoit.com",
@@ -44,7 +46,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     title: "Vinoth (Vnoit)",
-    description: "Exploring tech trends, coding tips, and innovation insights.",
+    description:
+    "Vinoth (Vnoit) — Lead Consultant at Thoughtworks in Bengaluru. Writing on software craft, engineering across the stack, and building products that last.",
     card: "summary_large_image",
     creator: "@vnoitkumar",
     images: {

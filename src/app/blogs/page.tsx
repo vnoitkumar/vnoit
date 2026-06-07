@@ -2,15 +2,19 @@ import type { Metadata } from "next";
 import { getAllBlogPosts } from "@/lib/api";
 import PostPreview from "@/components/post-preview";
 
+const blogsDescription =
+  "Articles by Vinoth (Vnoit) on software craft, backend and frontend engineering, and lessons from building real-world applications.";
+
 export const metadata: Metadata = {
   title: "Vinoth (Vnoit) - Blogs",
-  description: "Exploring tech trends, coding tips, and innovation insights.",
+  description: blogsDescription,
+  alternates: { canonical: "/blogs" },
   openGraph: {
     title: "Vinoth (Vnoit) - Blogs",
-    description: "Exploring tech trends, coding tips, and innovation insights.",
+    description: blogsDescription,
     type: "website",
     siteName: "Vnoit",
-    url: "https://vnoit.com",
+    url: "https://vnoit.com/blogs",
     images: [
       {
         url: "/assets/images/og-image-3600x1890.jpg",
@@ -34,7 +38,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     title: "Vinoth (Vnoit) - Blogs",
-    description: "Exploring tech trends, coding tips, and innovation insights.",
+    description: blogsDescription,
     card: "summary_large_image",
     creator: "@vnoitkumar",
     images: {
@@ -48,9 +52,9 @@ function Blogs() {
   const allPosts = getAllBlogPosts();
   return (
     <section className="mb-12 mx-auto mt-3 max-w-7xl p-6 lg:px-8">
-      <h2 className=" text-xl font-semibold leading-snug mb-3">
+      <h1 className=" text-xl font-semibold leading-snug mb-3">
         All Blogs
-      </h2>
+      </h1>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-14">
         {allPosts.map((post) => (
           <PostPreview

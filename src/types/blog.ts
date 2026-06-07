@@ -11,7 +11,7 @@ export interface BlogPost {
   readTime: string;
   author: Author;
   ogImage: { url: string };
-  twitterHandel: string;
+  twitterHandle: string;
   coverImageBlurHash: string;
   tag?: string;
   slug: string;

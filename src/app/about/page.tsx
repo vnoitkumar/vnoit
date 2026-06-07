@@ -2,15 +2,19 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Intro from "@/components/intro";
 
+const aboutDescription =
+  "About Vinoth (Vnoit) — Lead Consultant at Thoughtworks in Bengaluru, crafting software across the stack. Career, interests, and how to get in touch.";
+
 export const metadata: Metadata = {
   title: "Vinoth (Vnoit) - About",
-  description: "Exploring tech trends, coding tips, and innovation insights.",
+  description: aboutDescription,
+  alternates: { canonical: "/about" },
   openGraph: {
     title: "Vinoth (Vnoit) - About",
-    description: "Exploring tech trends, coding tips, and innovation insights.",
+    description: aboutDescription,
     type: "website",
     siteName: "Vnoit",
-    url: "https://vnoit.com",
+    url: "https://vnoit.com/about",
     images: [
       {
         url: "/assets/images/og-image-3600x1890.jpg",
@@ -34,7 +38,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     title: "Vinoth (Vnoit) - About",
-    description: "Exploring tech trends, coding tips, and innovation insights.",
+    description: aboutDescription,
     card: "summary_large_image",
     creator: "@vnoitkumar",
     images: {
@@ -85,7 +89,7 @@ function About() {
             </a>{" "}
             and{" "}
             <a
-              href="https://www.linkedin.com/in/vnoitkumar"
+              href="https://www.linkedin.com/in/vnoit"
               aria-label="Vinoth's LinkedIn profile"
               target="_blank"
               rel="noopener noreferrer"
@@ -102,7 +106,7 @@ function About() {
             <span className="hidden xl:inline">on the right-</span>
             it&apos;s my best solo shot yet. Also, peep my profile on&nbsp;
             <a
-              href="https://www.linkedin.com/in/vnoitkumar"
+              href="https://www.linkedin.com/in/vnoit"
               aria-label="Vinoth's LinkedIn profile"
               target="_blank"
               rel="noopener noreferrer"
@@ -120,7 +124,7 @@ function About() {
             >
               X
             </a>
-            ,&nbsp;
+            , and&nbsp;
             <a
               href="https://github.com/vnoitkumar"
               aria-label="Vinoth's GitHub profile"
@@ -129,16 +133,6 @@ function About() {
               className="link"
             >
               GitHub
-            </a>
-            , and&nbsp;
-            <a
-              href="https://stackoverflow.com/users/5154807/vnoitkumar"
-              aria-label="Vinoth's Stack Overflow profile"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="link"
-            >
-              Stack Overflow
             </a>
           </p>
 

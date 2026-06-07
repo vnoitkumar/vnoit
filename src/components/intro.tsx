@@ -1,9 +1,9 @@
 export default function Intro() {
   return (
     <>
-      <h2 className="text-3xl font-bold leading-snug">
-        Hey 👋 y&apos;all, I&apos;m Vinoth (Vnoit)!
-      </h2>
+      <h1 className="text-3xl font-bold leading-snug">
+        Hi, I&apos;m Vinoth (Vnoit)
+      </h1>
       <div>
         <p className="text-jet-black/80 dark:text-baby-powder/80 font-medium mt-3">
           I&apos;m a Lead Consultant at&nbsp;
@@ -16,8 +16,9 @@ export default function Intro() {
           >
             Thoughtworks
           </a>
-          &nbsp;in Bengaluru, India, specializing in crafting applications
-          with Golang, Node.js, React, React Native, etc.
+          &nbsp;in Bengaluru, where I help teams design and craft software
+          that&apos;s built to last — from the services underneath to the
+          products people actually use.
         </p>
 
         <p className="text-jet-black/80 dark:text-baby-powder/80 font-medium mt-3">

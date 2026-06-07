@@ -1,6 +1,11 @@
+import type { Metadata } from "next";
 import { getRecentPosts } from "@/lib/api";
 import Intro from "@/components/intro";
 import PostPreview from "@/components/post-preview";
+
+export const metadata: Metadata = {
+  alternates: { canonical: "/" },
+};
 
 interface Project {
   title: string;
@@ -45,11 +50,39 @@ const projects: Project[] = [
   },
 ];
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      name: "Vinoth Kumar",
+      alternateName: "Vnoit",
+      url: "https://vnoit.com",
+      jobTitle: "Lead Consultant",
+      worksFor: { "@type": "Organization", name: "Thoughtworks" },
+      sameAs: [
+        "https://www.linkedin.com/in/vnoit",
+        "https://x.com/vnoitkumar",
+        "https://github.com/vnoitkumar",
+      ],
+    },
+    {
+      "@type": "WebSite",
+      name: "Vinoth (Vnoit)",
+      url: "https://vnoit.com",
+    },
+  ],
+};
+
 export default function Home() {
   const recentPosts = getRecentPosts();
 
   return (
     <section className="mx-auto mt-3 max-w-7xl p-6 lg:px-8">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <section className="mb-12">
         <Intro />
       </section>
