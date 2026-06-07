@@ -7,6 +7,7 @@ const mentorshipDescription =
 
 const bookingUrl = "https://topmate.io/vnoit";
 const teacherOnUrl = "https://www.teacheron.com/tutor/1OZp";
+const googleUrl = "https://share.google/z4FCZ2rWdz9YgGbeA";
 
 export const metadata: Metadata = {
   title: "Vinoth (Vnoit) - Mentorship",
@@ -172,6 +173,20 @@ export default function Mentorship() {
             <ReviewCard key={`${review.name}-${review.date}`} review={review} />
           ))}
         </div>
+        <p className="text-jet-black/80 dark:text-baby-powder/80 font-medium mt-8">
+          Worked with me already? It&apos;d mean a lot if you left a quick
+          review on{" "}
+          <a
+            href={googleUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="link"
+            aria-label="Code with Vnoit on Google"
+          >
+            Google
+          </a>
+          .
+        </p>
       </div>
     </section>
   );

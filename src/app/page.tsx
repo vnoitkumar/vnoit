@@ -83,6 +83,7 @@ const jsonLd = {
         "https://x.com/vnoitkumar",
         "https://github.com/vnoitkumar",
         "https://www.instagram.com/vnoitkumar",
+        "https://share.google/z4FCZ2rWdz9YgGbeA",
       ],
     },
     {
