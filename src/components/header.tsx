@@ -4,6 +4,8 @@ import FullLogo from "@/components/full-logo";
 import MenuItem from "@/components/menu-item";
 import MobileMenuItem from "@/components/mobile-menu-item";
 
+const bookingUrl = "https://topmate.io/vnoit";
+
 export function Header() {
   return (
     <header>
@@ -21,7 +23,18 @@ export function Header() {
           <MenuItem name="Home" path="/" />
           <MenuItem name="Blogs" path="/blogs" />
           <MenuItem name="About" path="/about" />
-          <MenuItem name="Teaching" path="/teaching" />
+          <MenuItem name="Mentorship" path="/mentorship" />
+        </div>
+        <div className="flex lg:flex-1 lg:justify-end">
+          <a
+            href={bookingUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Book a mentorship session"
+            className="inline-flex items-center rounded-lg bg-jet-black dark:bg-baby-powder text-baby-powder dark:text-jet-black text-sm font-semibold px-4 py-2 transition-opacity duration-200 ease-out hover:opacity-95"
+          >
+            Book a session
+          </a>
         </div>
         <div className="fixed bottom-0 left-0 z-50 w-full h-16 border-t border-jet-black/20 dark:border-baby-powder/20 bg-baby-powder dark:bg-jet-black block lg:hidden">
           <div className="grid h-full max-w-lg grid-cols-4 mx-auto">
@@ -30,6 +43,7 @@ export function Header() {
               path="/"
               icon={
                 <svg
+                  key="icon"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 -960 960 960"
                   fill="currentColor"
@@ -44,6 +58,7 @@ export function Header() {
               path="/blogs"
               icon={
                 <svg
+                  key="icon"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 -960 960 960"
                   fill="currentColor"
@@ -58,6 +73,7 @@ export function Header() {
               path="/about"
               icon={
                 <svg
+                  key="icon"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 -960 960 960"
                   fill="currentColor"
@@ -68,10 +84,11 @@ export function Header() {
               }
             />
             <MobileMenuItem
-              name="Teaching"
-              path="/teaching"
+              name="Mentorship"
+              path="/mentorship"
               icon={
                 <svg
+                  key="icon"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
                   fill="currentColor"

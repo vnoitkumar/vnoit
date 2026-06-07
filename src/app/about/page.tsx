@@ -55,19 +55,20 @@ function About() {
         <Intro />
         <div>
           <p className="text-jet-black/80 dark:text-baby-powder/80 font-medium mt-3">
-            My career has spanned a few industries. I started in Chennai,
-            working on EdTech products before moving into FinTech with a
-            peer-to-peer lending app, and later returning to EdTech for a UAE
-            client alongside a white-label OTT product. I joined Thoughtworks
-            while still in Chennai and spent four years on a major Indian
-            bank&apos;s web, mobile, and backend systems, relocating to
-            Bengaluru mid-2022 partway through. From there I moved to a
-            cross-border payments platform for a Dubai client, and I&apos;m
-            currently working in energy commerce.
+            My career&apos;s taken me across a few industries. I started in
+            Chennai, working on EdTech products before jumping into FinTech with
+            a peer-to-peer lending app, then back to EdTech for a UAE client
+            alongside a white-label OTT product. I joined Thoughtworks while
+            still in Chennai and spent four years on a major Indian bank&apos;s
+            web, mobile, and backend systems, relocating to Bengaluru mid-2022
+            partway through. From there I moved to a cross-border payments
+            platform for a Dubai client, and these days I&apos;m working in
+            energy commerce.
           </p>
 
           <p className="text-jet-black/80 dark:text-baby-powder/80 font-medium mt-3">
-            I have a strong appreciation for color theory and use&nbsp;
+            Outside of code, I&apos;m a bit obsessed with color theory and lean
+            on&nbsp;
             <a
               href="https://coolors.co/"
               target="_blank"
@@ -76,8 +77,8 @@ function About() {
             >
               Coolors
             </a>
-            &nbsp;to select color palettes for my projects. I enjoy designing
-            posters in Figma and sharing them on{" "}
+            &nbsp;to pull palettes for my projects. I also design posters in
+            Figma and share them on{" "}
             <a
               href="https://x.com/vnoitkumar"
               aria-label="Vinoth's X (formerly Twitter) profile"
@@ -124,6 +125,16 @@ function About() {
             >
               X
             </a>
+            ,&nbsp;
+            <a
+              href="https://www.instagram.com/vnoitkumar/"
+              aria-label="Vinoth's Instagram profile"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="link"
+            >
+              Instagram
+            </a>
             , and&nbsp;
             <a
               href="https://github.com/vnoitkumar"
@@ -137,14 +148,14 @@ function About() {
           </p>
 
           <p className="text-jet-black/80 dark:text-baby-powder/80 font-normal text-xs mt-3">
-            Last updated at: 29th May 2026
+            Last updated at: 7th June 2026
           </p>
         </div>
       </div>
       <Image
         className="rounded-xl xl:mx-0 mx-auto xl:h-96 h-auto xl:w-96 w-auto"
         quality={100}
-        src="/assets/images/authors/vinoth-2000x2000.jpg"
+        src="/assets/images/authors/vinoth-2000x2000-v2.jpg"
         height={500}
         width={500}
         alt="Picture of Vinoth (vnoit)"

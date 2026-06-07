@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Intro() {
   return (
     <>
@@ -16,13 +18,13 @@ export default function Intro() {
           >
             Thoughtworks
           </a>
-          &nbsp;in Bengaluru, where I help teams design and craft software
+          &nbsp;in Bengaluru, where I help teams design and ship software
           that&apos;s built to last — from the services underneath to the
           products people actually use.
         </p>
 
         <p className="text-jet-black/80 dark:text-baby-powder/80 font-medium mt-3">
-          I love dropping knowledge and sharing my thoughts over at&nbsp;
+          Outside of work, I write about what I learn over on my&nbsp;
           <a
             href="https://vnoit.com/blogs"
             target="_blank"
@@ -30,19 +32,18 @@ export default function Intro() {
             className="link"
             aria-label="Vinoth's blogs"
           >
-            vnoit.com/blogs
+            blog
           </a>
-          . I also make time to teach and mentor people online. If you&apos;re
-          curious, check out my profile on&nbsp;
-          <a
+          , and I teach and mentor people online — from school kids writing
+          their first lines of code to working devs leveling up. If that sounds
+          like you, come hang out on my&nbsp;
+          <Link
             className="link"
-            href="https://www.teacheron.com/tutor/1OZp"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Vinoth's TeacherOn profile"
+            href="/mentorship"
+            aria-label="Vinoth's mentorship page"
           >
-            TeacherOn
-          </a>
+            mentorship page
+          </Link>
           .
         </p>
       </div>
