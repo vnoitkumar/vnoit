@@ -100,7 +100,7 @@ export function Header() {
               }
             />
             <MobileMenuItem
-              name="Code with Vnoit"
+              name="Mentoring"
               path="/code-with-vnoit"
               icon={
                 <svg

@@ -38,6 +38,9 @@ ${blogLines}
 - [JS Executer](https://jsexecuter.vnoit.com): An online JavaScript editor.
 
 ## Contact
+- Email: vnoitkumar@gmail.com
+- Phone: +91 77085 21528
+- WhatsApp: https://wa.me/917708521528
 - LinkedIn: https://www.linkedin.com/in/vnoit
 - X/Twitter: https://x.com/vnoitkumar
 - GitHub: https://github.com/vnoitkumar

@@ -147,6 +147,36 @@ function About() {
             </a>
           </p>
 
+          <p className="text-jet-black/80 dark:text-baby-powder/80 font-medium mt-3">
+            Want to reach me directly? Give me a call on{" "}
+            <a
+              href="tel:+917708521528"
+              className="link"
+              aria-label="Call Vinoth"
+            >
+              +91&nbsp;77085&nbsp;21528
+            </a>
+            , drop a line at{" "}
+            <a
+              href="mailto:vnoitkumar@gmail.com"
+              className="link"
+              aria-label="Email Vinoth"
+            >
+              vnoitkumar@gmail.com
+            </a>
+            , or message me on{" "}
+            <a
+              href="https://wa.me/917708521528"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="link"
+              aria-label="Message Vinoth on WhatsApp"
+            >
+              WhatsApp
+            </a>
+            .
+          </p>
+
           <p className="text-jet-black/80 dark:text-baby-powder/80 font-normal text-xs mt-3">
             Last updated at: 7th June 2026
           </p>

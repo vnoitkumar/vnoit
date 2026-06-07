@@ -64,6 +64,8 @@ const jsonLd = {
         "Lead Consultant at Thoughtworks in Bengaluru, writing on software craft, full-stack engineering, and building products that last.",
       jobTitle: "Lead Consultant",
       worksFor: { "@type": "Organization", name: "Thoughtworks" },
+      email: "vnoitkumar@gmail.com",
+      telephone: "+917708521528",
       address: {
         "@type": "PostalAddress",
         addressLocality: "Bengaluru",
