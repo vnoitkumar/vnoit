@@ -6,7 +6,7 @@ date: "2024-10-04"
 readTime: "5 min read"
 author:
   name: Vinoth (Vnoit)
-  picture: "/assets/images/authors/vinoth-200x200.jpg"
+  picture: "/assets/images/authors/vinoth-200x200-v2.jpg"
 ogImage:
   url: "/assets/images/blogs/mastering-nodejs-module-alias-setup/og-image.jpg"
 twitterHandle: "@vnoitkumar"

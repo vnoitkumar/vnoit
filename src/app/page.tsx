@@ -55,21 +55,45 @@ const jsonLd = {
   "@graph": [
     {
       "@type": "Person",
+      "@id": "https://vnoit.com/#person",
       name: "Vinoth Kumar",
       alternateName: "Vnoit",
       url: "https://vnoit.com",
+      image: "https://vnoit.com/assets/images/authors/vinoth-2000x2000-v2.jpg",
+      description:
+        "Lead Consultant at Thoughtworks in Bengaluru, writing on software craft, full-stack engineering, and building products that last.",
       jobTitle: "Lead Consultant",
       worksFor: { "@type": "Organization", name: "Thoughtworks" },
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: "Bengaluru",
+        addressCountry: "IN",
+      },
+      knowsAbout: [
+        "Software Engineering",
+        "Full-Stack Development",
+        "Node.js",
+        "JavaScript",
+        "TypeScript",
+        "Software Craftsmanship",
+        "Mentorship",
+      ],
       sameAs: [
         "https://www.linkedin.com/in/vnoit",
         "https://x.com/vnoitkumar",
         "https://github.com/vnoitkumar",
+        "https://www.instagram.com/vnoitkumar",
       ],
     },
     {
       "@type": "WebSite",
+      "@id": "https://vnoit.com/#website",
       name: "Vinoth (Vnoit)",
       url: "https://vnoit.com",
+      description:
+        "Personal site of Vinoth Kumar (Vnoit) — articles on software craft and full-stack engineering, mentorship, and side projects.",
+      inLanguage: "en",
+      publisher: { "@id": "https://vnoit.com/#person" },
     },
   ],
 };

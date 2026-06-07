@@ -36,7 +36,7 @@ export function Footer() {
         </a>
 
         <a
-          href="https://www.instagram.com/vnoitkumar/"
+          href="https://www.instagram.com/vnoitkumar"
           target="_blank"
           rel="noopener noreferrer"
           className="p-2"

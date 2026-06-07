@@ -22,7 +22,7 @@ function MobileMenuItem({ path, name, icon }: MobileMenuItemProps) {
       }`}
     >
       {icon}
-      <span className={`text-sm leading-none `}>{name}</span>
+      <span className={`text-xs leading-none `}>{name}</span>
     </Link>
   );
 }
