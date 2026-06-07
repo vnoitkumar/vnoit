@@ -57,8 +57,84 @@ export default function CodeWithVnoit() {
   const { count, average } = getReviewStats();
   const averageLabel = average % 1 === 0 ? `${average}` : average.toFixed(1);
 
+  // Modelled as a Course so the genuine TeacherOn reviews are eligible for
+  // Google's review-snippet rich result (Service/Person types are not).
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Course",
+    name: "Code with Vnoit — 1:1 software mentoring",
+    description: codeWithVnoitDescription,
+    url: "https://vnoit.com/code-with-vnoit",
+    inLanguage: "en",
+    provider: {
+      "@type": "Person",
+      name: "Vinoth (Vnoit)",
+      url: "https://vnoit.com",
+    },
+    offers: {
+      "@type": "Offer",
+      category: "Paid",
+      priceCurrency: "INR",
+      price: "399",
+      url: bookingUrl,
+      availability: "https://schema.org/InStock",
+    },
+    hasCourseInstance: {
+      "@type": "CourseInstance",
+      courseMode: "Online",
+      courseWorkload: "PT30M",
+      instructor: {
+        "@type": "Person",
+        name: "Vinoth (Vnoit)",
+        url: "https://vnoit.com",
+      },
+    },
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: averageLabel,
+      reviewCount: count,
+      bestRating: "5",
+      worstRating: "1",
+    },
+    review: reviews.map((review) => ({
+      "@type": "Review",
+      author: { "@type": "Person", name: review.name },
+      datePublished: new Date(review.date).toISOString(),
+      name: review.title,
+      reviewBody: review.text,
+      reviewRating: {
+        "@type": "Rating",
+        ratingValue: `${review.rating}`,
+        bestRating: "5",
+        worstRating: "1",
+      },
+    })),
+  };
+
+  const breadcrumbLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://vnoit.com" },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Code with Vnoit",
+        item: "https://vnoit.com/code-with-vnoit",
+      },
+    ],
+  };
+
   return (
     <section className="mb-12 mx-auto mt-3 max-w-7xl p-6 lg:px-8">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }}
+      />
       <h1 className="text-3xl font-bold leading-snug">Code with Vnoit</h1>
 
       <div className="max-w-5xl">

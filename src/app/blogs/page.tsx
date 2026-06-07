@@ -50,8 +50,46 @@ export const metadata: Metadata = {
 
 function Blogs() {
   const allPosts = getAllBlogPosts();
+
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    name: "Vinoth (Vnoit) — Blog",
+    description: blogsDescription,
+    url: "https://vnoit.com/blogs",
+    inLanguage: "en",
+    author: { "@id": "https://vnoit.com/#person" },
+    publisher: { "@id": "https://vnoit.com/#person" },
+    blogPost: allPosts.map((post) => ({
+      "@type": "BlogPosting",
+      headline: post.title,
+      description: post.excerpt,
+      url: `https://vnoit.com/blogs/${post.slug}`,
+      image: `https://vnoit.com${post.ogImage.url}`,
+      datePublished: new Date(post.date).toISOString(),
+      author: { "@id": "https://vnoit.com/#person" },
+    })),
+  };
+
+  const breadcrumbLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://vnoit.com" },
+      { "@type": "ListItem", position: 2, name: "Blog", item: "https://vnoit.com/blogs" },
+    ],
+  };
+
   return (
     <section className="mb-12 mx-auto mt-3 max-w-7xl p-6 lg:px-8">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }}
+      />
       <h1 className=" text-xl font-semibold leading-snug mb-3">
         All Blogs
       </h1>

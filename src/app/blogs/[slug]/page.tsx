@@ -21,6 +21,9 @@ export default async function Post({ params }: { params: Params }) {
   const articleBody = stripMarkdown(post.content || "");
   const wordCount = articleBody.split(/\s+/).filter(Boolean).length;
   const postUrl = `https://vnoit.com/blogs/${slug}`;
+  // Emit dates as full ISO 8601 with a timezone so structured-data validators
+  // accept them (frontmatter stores date-only, e.g. "2024-10-31").
+  const dateIso = new Date(post.date).toISOString();
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -29,8 +32,8 @@ export default async function Post({ params }: { params: Params }) {
     description: post.excerpt,
     image: `https://vnoit.com${post.ogImage.url}`,
     url: postUrl,
-    datePublished: post.date,
-    dateModified: post.date,
+    datePublished: dateIso,
+    dateModified: dateIso,
     inLanguage: "en",
     isAccessibleForFree: true,
     wordCount,
@@ -119,8 +122,8 @@ export async function generateMetadata({
       type: "article",
       siteName: "Vnoit",
       url: `https://vnoit.com/blogs/${slug}`,
-      publishedTime: post.date,
-      modifiedTime: post.date,
+      publishedTime: new Date(post.date).toISOString(),
+      modifiedTime: new Date(post.date).toISOString(),
       authors: [post.author.name],
       tags: post.tag ? [post.tag] : undefined,
       images: [post.ogImage.url],

@@ -49,8 +49,35 @@ export const metadata: Metadata = {
 };
 
 function About() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    name: "About Vinoth (Vnoit)",
+    description: aboutDescription,
+    url: "https://vnoit.com/about",
+    inLanguage: "en",
+    mainEntity: { "@id": "https://vnoit.com/#person" },
+  };
+
+  const breadcrumbLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://vnoit.com" },
+      { "@type": "ListItem", position: 2, name: "About", item: "https://vnoit.com/about" },
+    ],
+  };
+
   return (
     <section className="mx-auto mt-3 max-w-7xl p-6 lg:px-8 block xl:flex gap-20">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }}
+      />
       <div className="mb-10 xl:mb-0">
         <Intro />
         <div>
