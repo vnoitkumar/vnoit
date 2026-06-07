@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import { getReviews, getReviewStats } from "@/lib/reviews";
-import { offerings } from "@/lib/offerings";
 import { ReviewCard } from "@/components/review-card";
-import { OfferingCard } from "@/components/offering-card";
 
 const mentorshipDescription =
   "Vinoth (Vnoit) teaches and mentors developers online — React, Node.js, JavaScript, and building with AI tools like Claude, from the basics to advanced patterns. Rated 5.0/5 by students on TeacherOn.";
@@ -94,10 +92,45 @@ export default function Mentorship() {
         <p className="text-jet-black/80 dark:text-baby-powder/80 font-medium mt-3">
           No boring lecture energy. Sessions are 1:1 and fully hands-on — you
           write the code, we debug real problems together, and I keep it
-          practical so things actually click. After each one I drop my notes,
-          the code, and a recording so you can go back anytime. Scroll down and
-          grab a slot whenever you&apos;re ready.
+          practical so things actually click. It&apos;s all over video, with
+          notes and a recording after, so you can go back anytime. Head over to{" "}
+          <a
+            href={bookingUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="link"
+            aria-label="Vinoth's Topmate"
+          >
+            Topmate
+          </a>{" "}
+          and pick whatever fits your vibe.
         </p>
+
+        <a
+          href={bookingUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Book a session on Topmate"
+          className="group mt-6 inline-flex items-center gap-2 rounded-full bg-jet-black dark:bg-baby-powder text-baby-powder dark:text-jet-black font-semibold px-5 py-2.5 hover:opacity-90 transition-opacity"
+        >
+          Book a session on Topmate
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width={18}
+            height={18}
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth={2}
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            aria-hidden="true"
+            className="transition-transform group-hover:translate-x-0.5"
+          >
+            <path d="M5 12h14" />
+            <path d="m12 5 7 7-7 7" />
+          </svg>
+        </a>
       </div>
 
       <div className="mt-8 flex items-center gap-2 text-jet-black/80 dark:text-baby-powder/80 font-medium">
@@ -117,23 +150,6 @@ export default function Mentorship() {
             TeacherOn
           </a>
         </span>
-      </div>
-
-      <div className="mt-12">
-        <h2 className="text-xl font-semibold leading-snug">Book a session</h2>
-        <p className="text-jet-black/80 dark:text-baby-powder/80 font-medium mt-1">
-          All over video, with notes and a recording after. Pick whatever fits
-          your vibe.
-        </p>
-        <div className="grid md:grid-cols-2 gap-6 mt-6">
-          {offerings.map((offering) => (
-            <OfferingCard
-              key={offering.title}
-              offering={offering}
-              bookingUrl={bookingUrl}
-            />
-          ))}
-        </div>
       </div>
 
       <div className="mt-12">

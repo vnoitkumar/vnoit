@@ -31,10 +31,13 @@ export function Header() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Book a mentorship session"
-            className="group inline-flex items-center gap-2 rounded-lg bg-jet-black dark:bg-baby-powder text-baby-powder dark:text-jet-black text-sm font-semibold px-4 py-2.5 transition-opacity duration-200 ease-out hover:opacity-95"
+            className="inline-flex items-center gap-2 rounded-full bg-jet-black dark:bg-baby-powder text-baby-powder dark:text-jet-black text-sm font-semibold px-4 py-2.5"
           >
+            Book a session
             <svg
               xmlns="http://www.w3.org/2000/svg"
+              width={16}
+              height={16}
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
@@ -44,22 +47,9 @@ export function Header() {
               className="w-4 h-4"
               aria-hidden="true"
             >
-              <path d="M8 2v4" />
-              <path d="M16 2v4" />
-              <rect width={18} height={18} x={3} y={4} rx={2} />
-              <path d="M3 10h18" />
+              <path d="M5 12h14" />
+              <path d="m12 5 7 7-7 7" />
             </svg>
-            <span className="grid text-center">
-              <span className="col-start-1 row-start-1 transition-opacity duration-200 ease-out group-hover:opacity-0">
-                Book a session
-              </span>
-              <span
-                aria-hidden="true"
-                className="col-start-1 row-start-1 opacity-0 transition-opacity duration-200 ease-out group-hover:opacity-100"
-              >
-                Let&apos;s talk
-              </span>
-            </span>
           </a>
         </div>
         <div className="fixed bottom-0 left-0 z-50 w-full h-14 border-t border-jet-black/20 dark:border-baby-powder/20 bg-baby-powder dark:bg-jet-black block lg:hidden">
