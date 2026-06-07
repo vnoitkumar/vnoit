@@ -18,7 +18,7 @@ export function OfferingCard({
       className="group flex flex-col rounded-2xl border border-jet-black/20 dark:border-baby-powder/20 shadow-sm p-6 hover-up"
     >
       <div className="flex items-start justify-between gap-2">
-        <p className="text-sm font-medium text-jet-black/60 dark:text-baby-powder/60">
+        <p className="text-sm font-medium text-jet-black/70 dark:text-baby-powder/70">
           {offering.format} · {offering.duration}
         </p>
         {offering.badge ? (
@@ -35,7 +35,7 @@ export function OfferingCard({
         <div className="flex items-baseline gap-2">
           <span className="font-bold">{offering.price}</span>
           {offering.originalPrice ? (
-            <span className="text-sm line-through text-jet-black/50 dark:text-baby-powder/50">
+            <span className="text-sm line-through text-jet-black/70 dark:text-baby-powder/70">
               {offering.originalPrice}
             </span>
           ) : null}

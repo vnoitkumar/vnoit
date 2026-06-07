@@ -127,7 +127,7 @@ export function Footer() {
           </svg>
         </a>
       </div>
-      <p className="text-sm text-jet-black/60 dark:text-baby-powder/60">
+      <p className="text-sm text-jet-black/70 dark:text-baby-powder/70">
         © {year}&nbsp;Vnoit · Crafted with care, end to end
       </p>
     </footer>
