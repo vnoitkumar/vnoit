@@ -1,38 +1,41 @@
 import type { MetadataRoute } from "next";
+import { getAllBlogPosts } from "@/lib/api";
 
-const baseBath = "https://vnoit.com";
+const baseUrl = "https://vnoit.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
+  const blogPosts: MetadataRoute.Sitemap = getAllBlogPosts().map((post) => ({
+    url: `${baseUrl}/blogs/${post.slug}`,
+    lastModified: new Date(post.date),
+    changeFrequency: "yearly",
+    priority: 1,
+  }));
+
   return [
     {
-      url: baseBath,
+      url: baseUrl,
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 1,
     },
     {
-      url: `${baseBath}/blogs`,
+      url: `${baseUrl}/blogs`,
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.8,
     },
     {
-      url: `${baseBath}/about`,
+      url: `${baseUrl}/about`,
       lastModified: new Date(),
       changeFrequency: "yearly",
       priority: 0.5,
     },
     {
-      url: `${baseBath}/blogs/mastering-nodejs-module-alias-setup`,
+      url: `${baseUrl}/teaching`,
       lastModified: new Date(),
-      changeFrequency: "yearly",
-      priority: 1,
+      changeFrequency: "monthly",
+      priority: 0.6,
     },
-    {
-      url: `${baseBath}/blogs/why-mockoon-is-the-api-tool-you-didnt-know-you-needed`,
-      lastModified: new Date(),
-      changeFrequency: "yearly",
-      priority: 1,
-    },
+    ...blogPosts,
   ];
 }
