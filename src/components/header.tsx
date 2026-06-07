@@ -21,9 +21,10 @@ export function Header() {
           <MenuItem name="Home" path="/" />
           <MenuItem name="Blogs" path="/blogs" />
           <MenuItem name="About" path="/about" />
+          <MenuItem name="Teaching" path="/teaching" />
         </div>
         <div className="fixed bottom-0 left-0 z-50 w-full h-16 border-t border-jet-black/20 dark:border-baby-powder/20 bg-baby-powder dark:bg-jet-black block lg:hidden">
-          <div className="grid h-full max-w-lg grid-cols-3 mx-auto">
+          <div className="grid h-full max-w-lg grid-cols-4 mx-auto">
             <MobileMenuItem
               name="Home"
               path="/"
@@ -63,6 +64,20 @@ export function Header() {
                   className="w-7 h-7 mb-1 text-jet-black/80 dark:text-baby-powder/80"
                 >
                   <path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z" />
+                </svg>
+              }
+            />
+            <MobileMenuItem
+              name="Teaching"
+              path="/teaching"
+              icon={
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  className="w-7 h-7 mb-1 text-jet-black/80 dark:text-baby-powder/80"
+                >
+                  <path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z" />
                 </svg>
               }
             />
