@@ -2,23 +2,23 @@ import type { Metadata } from "next";
 import { getReviews, getReviewStats } from "@/lib/reviews";
 import { ReviewCard } from "@/components/review-card";
 
-const mentorshipDescription =
-  "Vinoth (Vnoit) teaches and mentors developers online — React, Node.js, JavaScript, and building with AI tools like Claude, from the basics to advanced patterns. Rated 5.0/5 by students on TeacherOn.";
+const codeWithVnoitDescription =
+  "Code with Vnoit — Vinoth (Vnoit) teaches and mentors developers online — React, Node.js, JavaScript, and building with AI tools like Claude, from the basics to advanced patterns. Rated 5.0/5 by students on TeacherOn.";
 
 const bookingUrl = "https://topmate.io/vnoit";
 const teacherOnUrl = "https://www.teacheron.com/tutor/1OZp";
 const googleUrl = "https://share.google/z4FCZ2rWdz9YgGbeA";
 
 export const metadata: Metadata = {
-  title: "Vinoth (Vnoit) - Mentorship",
-  description: mentorshipDescription,
-  alternates: { canonical: "/mentorship" },
+  title: "Code with Vnoit",
+  description: codeWithVnoitDescription,
+  alternates: { canonical: "/code-with-vnoit" },
   openGraph: {
-    title: "Vinoth (Vnoit) - Mentorship",
-    description: mentorshipDescription,
+    title: "Code with Vnoit",
+    description: codeWithVnoitDescription,
     type: "website",
     siteName: "Vnoit",
-    url: "https://vnoit.com/mentorship",
+    url: "https://vnoit.com/code-with-vnoit",
     images: [
       {
         url: "/assets/images/og-image-3600x1890.jpg",
@@ -41,8 +41,8 @@ export const metadata: Metadata = {
     ],
   },
   twitter: {
-    title: "Vinoth (Vnoit) - Mentorship",
-    description: mentorshipDescription,
+    title: "Code with Vnoit",
+    description: codeWithVnoitDescription,
     card: "summary_large_image",
     creator: "@vnoitkumar",
     images: {
@@ -52,14 +52,14 @@ export const metadata: Metadata = {
   },
 };
 
-export default function Mentorship() {
+export default function CodeWithVnoit() {
   const reviews = getReviews();
   const { count, average } = getReviewStats();
   const averageLabel = average % 1 === 0 ? `${average}` : average.toFixed(1);
 
   return (
     <section className="mb-12 mx-auto mt-3 max-w-7xl p-6 lg:px-8">
-      <h1 className="text-3xl font-bold leading-snug">Mentorship</h1>
+      <h1 className="text-3xl font-bold leading-snug">Code with Vnoit</h1>
 
       <div className="max-w-5xl">
         <p className="text-jet-black/80 dark:text-baby-powder/80 font-medium mt-3">
@@ -134,7 +134,7 @@ export default function Mentorship() {
         </a>
       </div>
 
-      <div className="mt-8 flex items-center gap-2 text-jet-black/80 dark:text-baby-powder/80 font-medium">
+      <div className="mt-4 flex items-center gap-2 text-jet-black/80 dark:text-baby-powder/80 font-medium">
         <span aria-hidden="true" className="text-lg leading-none">
           ★
         </span>

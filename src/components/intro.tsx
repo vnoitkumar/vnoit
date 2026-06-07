@@ -39,10 +39,10 @@ export default function Intro() {
           like you, come hang out on my&nbsp;
           <Link
             className="link"
-            href="/mentorship"
-            aria-label="Vinoth's mentorship page"
+            href="/code-with-vnoit"
+            aria-label="Code with Vnoit page"
           >
-            mentorship page
+            Code with Vnoit
           </Link>
           .
         </p>

@@ -23,17 +23,17 @@ export function Header() {
           <MenuItem name="Home" path="/" />
           <MenuItem name="Blogs" path="/blogs" />
           <MenuItem name="About" path="/about" />
-          <MenuItem name="Mentorship" path="/mentorship" />
+          <MenuItem name="Code with Vnoit" path="/code-with-vnoit" />
         </div>
         <div className="flex lg:flex-1 lg:justify-end">
           <a
             href={bookingUrl}
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="Book a mentorship session"
+            aria-label="Book a session on Topmate"
             className="inline-flex items-center gap-2 rounded-full bg-jet-black dark:bg-baby-powder text-baby-powder dark:text-jet-black text-sm font-semibold px-4 py-2.5"
           >
-            Book a session
+            Let&apos;s talk
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width={16}
@@ -100,8 +100,8 @@ export function Header() {
               }
             />
             <MobileMenuItem
-              name="Mentorship"
-              path="/mentorship"
+              name="Code with Vnoit"
+              path="/code-with-vnoit"
               icon={
                 <svg
                   key="icon"
