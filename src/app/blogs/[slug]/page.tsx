@@ -55,7 +55,7 @@ export default async function Post({ params }: { params: Params }) {
       "@type": "Person",
       name: "Vinoth (Vnoit)",
       url: "https://vnoit.com",
-      logo: {
+      image: {
         "@type": "ImageObject",
         url: "https://vnoit.com/assets/images/og-image-1200x630.jpg",
       },

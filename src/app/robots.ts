@@ -28,6 +28,5 @@ export default function robots(): MetadataRoute.Robots {
       { userAgent: aiCrawlers, allow: "/" },
     ],
     sitemap: "https://vnoit.com/sitemap.xml",
-    host: "https://vnoit.com",
   };
 }
