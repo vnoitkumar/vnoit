@@ -25,15 +25,13 @@ export default function Intro() {
 
         <p className="text-jet-black/80 dark:text-baby-powder/80 font-medium mt-3">
           Outside of work, I write about what I learn over on my&nbsp;
-          <a
-            href="https://vnoit.com/blogs"
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link
+            href="/blogs"
             className="link"
             aria-label="Vinoth's blogs"
           >
             blog
-          </a>
+          </Link>
           , and I teach and mentor people online — from school kids writing
           their first lines of code to working devs leveling up. If that sounds
           like you, come hang out on my&nbsp;

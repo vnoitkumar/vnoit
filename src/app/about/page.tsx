@@ -129,9 +129,9 @@ function About() {
           </p>
 
           <p className="text-jet-black/80 dark:text-baby-powder/80 font-medium mt-3">
-            Yep, that&apos;s me&nbsp;
-            <span className="inline xl:hidden">at the bottom-</span>
-            <span className="hidden xl:inline">on the right-</span>
+            Yep, that&apos;s me
+            <span className="inline xl:hidden">&nbsp;at the bottom-</span>
+            <span className="hidden xl:inline">&nbsp;on the right-</span>
             it&apos;s my best solo shot yet. Also, peep my profile on&nbsp;
             <a
               href="https://www.linkedin.com/in/vnoit"
