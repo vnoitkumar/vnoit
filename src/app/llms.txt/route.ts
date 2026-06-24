@@ -28,8 +28,8 @@ export function GET() {
 ${blogLines}
 - [All blog posts](${baseUrl}/blogs): Full archive of articles on software engineering and development.
 
-## Code with Vnoit
-- [Code with Vnoit](${baseUrl}/code-with-vnoit): One-on-one mentoring and teaching offerings for software engineers, including student reviews.
+## Code with Vinoth
+- [Code with Vinoth](${baseUrl}/code-with-vinoth): One-on-one mentoring and teaching offerings for software engineers, including student reviews.
 
 ## Projects
 - [Code Snap](https://code-snap.vnoit.com): Share your source code as images.

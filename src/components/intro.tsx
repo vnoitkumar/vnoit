@@ -37,10 +37,10 @@ export default function Intro() {
           like you, come hang out on my&nbsp;
           <Link
             className="link"
-            href="/code-with-vnoit"
-            aria-label="Code with Vnoit page"
+            href="/code-with-vinoth"
+            aria-label="Code with Vinoth page"
           >
-            Code with Vnoit
+            Code with Vinoth
           </Link>
           .
         </p>

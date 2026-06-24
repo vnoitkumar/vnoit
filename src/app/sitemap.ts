@@ -31,7 +31,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.5,
     },
     {
-      url: `${baseUrl}/code-with-vnoit`,
+      url: `${baseUrl}/code-with-vinoth`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.6,
