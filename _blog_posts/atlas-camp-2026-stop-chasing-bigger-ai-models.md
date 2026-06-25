@@ -143,22 +143,18 @@ People often imagine one giant model doing everything. In practice, the future l
 
 Many teams are working toward [Spec-to-Code](/glossary#spec-to-code), the idea of going from a written requirement directly to production-ready software.
 
-Most conversations stop at code generation.
+Most demos stop at the same place: "look, the AI wrote the code." But generating code is rarely the hard part. The hard part is understanding the context behind it: the requirements, the design decisions, the constraints, the intent.
 
-But a question kept coming up for me throughout the day:
-
-What if generating code isn't the hard part? What if understanding context is?
-
-Atlassian already holds a lot of what a Spec-to-Code system would need:
+That is where Atlassian's tools come back into the picture. A lot of that context already lives in one place:
 
 * Stories in Jira
 * Technical designs in Confluence
 * Source code in Bitbucket
-* Team decisions linked across the tools
+* Team decisions linked across all of it
 
-When all of that is already connected, it stops feeling distant. It starts feeling like closing a gap.
+When the context is already connected, Spec-to-Code stops feeling far off. It starts feeling like closing a gap rather than inventing something new.
 
-This wouldn't replace developers. It would just make it easier to get from understanding a problem to actually solving it.
+This wouldn't replace developers. It would just shrink the distance between understanding a problem and shipping a solution.
 
 ## Where Developers Are Actually Spending Their Time
 
