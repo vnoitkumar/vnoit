@@ -3,8 +3,10 @@ import { notFound } from "next/navigation";
 import { getAllBlogPosts, getBlogPostBySlug } from "@/lib/api";
 import markdownToHtml from "@/lib/markdownToHtml";
 import { stripMarkdown } from "@/lib/stripMarkdown";
+import { getPostImagePaths } from "@/lib/postImages";
 import { PostBody } from "@/components/post-body";
 import { PostHeader } from "@/components/post-header";
+import AiDisclaimer from "@/components/ai-disclaimer";
 
 type Params = Promise<{ slug: string }>;
 
@@ -21,6 +23,7 @@ export default async function Post({ params }: { params: Params }) {
   const articleBody = stripMarkdown(post.content || "");
   const wordCount = articleBody.split(/\s+/).filter(Boolean).length;
   const postUrl = `https://vnoit.com/blogs/${slug}`;
+  const postImages = getPostImagePaths(post).map((path) => `https://vnoit.com${path}`);
   // Emit dates as full ISO 8601 with a timezone so structured-data validators
   // accept them (frontmatter stores date-only, e.g. "2024-10-31").
   const dateIso = new Date(post.date).toISOString();
@@ -30,7 +33,7 @@ export default async function Post({ params }: { params: Params }) {
     "@type": "BlogPosting",
     headline: post.title,
     description: post.excerpt,
-    image: `https://vnoit.com${post.ogImage.url}`,
+    image: postImages.length ? postImages : `https://vnoit.com${post.ogImage.url}`,
     url: postUrl,
     datePublished: dateIso,
     dateModified: dateIso,
@@ -96,6 +99,9 @@ export default async function Post({ params }: { params: Params }) {
         coverImageBlurHash={post.coverImageBlurHash}
       />
       <PostBody content={content} />
+      <section className="max-w-4xl mx-auto px-6 lg:px-8 mt-10 mb-12">
+        <AiDisclaimer />
+      </section>
     </article>
   );
 }

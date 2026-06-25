@@ -22,8 +22,12 @@
     @apply text-xl lg:text-2xl mt-8 mb-4 leading-snug;
   }
 
-  .markdown a {
+  .markdown a[target="_blank"] {
     @apply underline-offset-2 decoration-1 underline decoration-dotted dark:text-violet-300 text-violet-700 max-w-full overflow-auto inline-block align-bottom;
+  }
+
+  .markdown a:not([target="_blank"]) {
+    @apply underline decoration-dotted underline-offset-2 decoration-1 decoration-jet-black/30 dark:decoration-baby-powder/30;
   }
 
   .markdown li {
@@ -32,6 +36,14 @@
 
   .markdown img {
     @apply rounded-md;
+  }
+
+  .markdown figure {
+    @apply my-6;
+  }
+
+  .markdown figcaption {
+    @apply mt-2 text-sm text-center text-jet-black/60 dark:text-baby-powder/60;
   }
 
   .markdown p,

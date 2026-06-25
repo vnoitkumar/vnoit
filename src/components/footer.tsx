@@ -2,6 +2,12 @@ export function Footer() {
   const year = new Date().getFullYear();
   return (
     <footer className="mx-auto flex max-w-7xl flex-col items-center justify-center gap-2 p-6 lg:px-8 lg:mb-0 mt-20 mb-16">
+      <a
+        href="/glossary"
+        className="text-sm text-jet-black/70 dark:text-baby-powder/70 underline-offset-2 underline decoration-dotted hover:text-jet-black dark:hover:text-baby-powder"
+      >
+        Glossary
+      </a>
       <div className="flex gap-1">
         <a
           href="https://www.linkedin.com/in/vnoit"

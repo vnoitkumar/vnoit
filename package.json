@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint .",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "blurhash": "node scripts/generate-blurhash.mjs"
   },
   "dependencies": {
     "@headlessui/react": "^2.2.10",

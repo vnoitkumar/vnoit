@@ -37,6 +37,9 @@ ${blogLines}
 - [Case Converter](https://case-converter.vnoit.com): A simple text case converter.
 - [JS Executer](https://jsexecuter.vnoit.com): An online JavaScript editor.
 
+## Reference
+- [Glossary](${baseUrl}/glossary): Plain-English definitions of technical terms used in the blog — MCP, LLM, RAG, Rovo, Forge, and more.
+
 ## Contact
 - Email: vnoitkumar@gmail.com
 - Phone: +91 77085 21528

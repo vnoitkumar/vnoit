@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { getRecentPosts } from "@/lib/api";
 import Intro from "@/components/intro";
 import PostPreview from "@/components/post-preview";
+import AiDisclaimer from "@/components/ai-disclaimer";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/" },
@@ -133,6 +134,9 @@ export default function Home() {
               coverImageBlurHash={post.coverImageBlurHash}
             />
           ))}
+        </div>
+        <div className="mt-6">
+          <AiDisclaimer />
         </div>
       </section>
 

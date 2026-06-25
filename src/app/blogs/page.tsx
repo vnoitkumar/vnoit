@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { getAllBlogPosts } from "@/lib/api";
 import PostPreview from "@/components/post-preview";
+import AiDisclaimer from "@/components/ai-disclaimer";
 
 const blogsDescription =
   "Articles by Vinoth (Vnoit) on software craft, backend and frontend engineering, and lessons from building real-world applications.";
@@ -93,6 +94,9 @@ function Blogs() {
       <h1 className=" text-xl font-semibold leading-snug mb-3">
         All Blogs
       </h1>
+      <div className="mb-8">
+        <AiDisclaimer />
+      </div>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-14">
         {allPosts.map((post) => (
           <PostPreview

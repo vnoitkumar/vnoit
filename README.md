@@ -50,3 +50,8 @@ Create a new `.md` file in `/_blog_posts/` with the required frontmatter. To gen
 ## Useful References
 
 - [Next.js Metadata Files API](https://nextjs.org/docs/app/api-reference/file-conventions/metadata)
+
+## TODO
+
+- [ ] Write short blog posts for events I hosted over the past year — one post per event
+- [ ] Build a gallery page — images from events, profile shots, photos I took, and visuals I created for blog posts (diagrams, illustrations)
