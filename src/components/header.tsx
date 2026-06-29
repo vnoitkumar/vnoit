@@ -23,7 +23,7 @@ export function Header() {
           <MenuItem name="Home" path="/" />
           <MenuItem name="Blogs" path="/blogs" />
           <MenuItem name="About" path="/about" />
-          <MenuItem name="Code with Vinoth" path="/code-with-vinoth" />
+          <MenuItem name="Code with Vnoit" path="/code-with-vnoit" />
         </div>
         <div className="flex lg:flex-1 lg:justify-end">
           <a
@@ -101,7 +101,7 @@ export function Header() {
             />
             <MobileMenuItem
               name="Mentoring"
-              path="/code-with-vinoth"
+              path="/code-with-vnoit"
               icon={
                 <svg
                   key="icon"

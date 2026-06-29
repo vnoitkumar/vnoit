@@ -122,7 +122,7 @@ export function Footer() {
           target="_blank"
           rel="noopener noreferrer"
           className="p-2"
-          aria-label="Code with Vinoth on Google"
+          aria-label="Code with Vnoit on Google"
         >
           <svg
             viewBox="0 0 24 24"

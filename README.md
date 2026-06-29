@@ -15,7 +15,7 @@ Personal website and blog of Vinoth Kumar, built with Next.js 16, TypeScript, an
 
 - Blog with markdown-based posts (`/_blog_posts/*.md`)
 - About page
-- Code with Vinoth section
+- Code with Vnoit section
 - Dark mode support
 - Google Analytics
 - Structured data / Open Graph / Twitter card metadata

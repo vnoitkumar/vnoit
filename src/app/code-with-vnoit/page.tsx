@@ -2,23 +2,23 @@ import type { Metadata } from "next";
 import { getReviews, getReviewStats } from "@/lib/reviews";
 import { ReviewCard } from "@/components/review-card";
 
-const codeWithVinothDescription =
-  "Code with Vinoth — Vinoth (Vnoit) teaches and mentors developers online — React, Node.js, JavaScript, and building with AI tools like Claude, from the basics to advanced patterns. Rated 5.0/5 by students on TeacherOn.";
+const codeWithVnoitDescription =
+  "Code with Vnoit — Vinoth (Vnoit) teaches and mentors developers online — React, Node.js, JavaScript, and building with AI tools like Claude, from the basics to advanced patterns. Rated 5.0/5 by students on TeacherOn.";
 
 const bookingUrl = "https://topmate.io/vnoit";
 const teacherOnUrl = "https://www.teacheron.com/tutor/1OZp";
 const googleUrl = "https://share.google/z4FCZ2rWdz9YgGbeA";
 
 export const metadata: Metadata = {
-  title: "Code with Vinoth",
-  description: codeWithVinothDescription,
-  alternates: { canonical: "/code-with-vinoth" },
+  title: "Code with Vnoit",
+  description: codeWithVnoitDescription,
+  alternates: { canonical: "/code-with-vnoit" },
   openGraph: {
-    title: "Code with Vinoth",
-    description: codeWithVinothDescription,
+    title: "Code with Vnoit",
+    description: codeWithVnoitDescription,
     type: "website",
     siteName: "Vnoit",
-    url: "https://vnoit.com/code-with-vinoth",
+    url: "https://vnoit.com/code-with-vnoit",
     images: [
       {
         url: "/assets/images/og-image-3600x1890.jpg",
@@ -41,8 +41,8 @@ export const metadata: Metadata = {
     ],
   },
   twitter: {
-    title: "Code with Vinoth",
-    description: codeWithVinothDescription,
+    title: "Code with Vnoit",
+    description: codeWithVnoitDescription,
     card: "summary_large_image",
     creator: "@vnoitkumar",
     images: {
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
   },
 };
 
-export default function CodeWithVinoth() {
+export default function CodeWithVnoit() {
   const reviews = getReviews();
   const { count, average } = getReviewStats();
   const averageLabel = average % 1 === 0 ? `${average}` : average.toFixed(1);
@@ -62,9 +62,9 @@ export default function CodeWithVinoth() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Course",
-    name: "Code with Vinoth — 1:1 software mentoring",
-    description: codeWithVinothDescription,
-    url: "https://vnoit.com/code-with-vinoth",
+    name: "Code with Vnoit — 1:1 software mentoring",
+    description: codeWithVnoitDescription,
+    url: "https://vnoit.com/code-with-vnoit",
     inLanguage: "en",
     provider: {
       "@type": "Person",
@@ -119,8 +119,8 @@ export default function CodeWithVinoth() {
       {
         "@type": "ListItem",
         position: 2,
-        name: "Code with Vinoth",
-        item: "https://vnoit.com/code-with-vinoth",
+        name: "Code with Vnoit",
+        item: "https://vnoit.com/code-with-vnoit",
       },
     ],
   };
@@ -135,7 +135,7 @@ export default function CodeWithVinoth() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }}
       />
-      <h1 className="text-3xl font-bold leading-snug">Code with Vinoth</h1>
+      <h1 className="text-3xl font-bold leading-snug">Code with Vnoit</h1>
 
       <div className="max-w-5xl">
         <p className="text-jet-black/80 dark:text-baby-powder/80 font-medium mt-3">
@@ -257,7 +257,7 @@ export default function CodeWithVinoth() {
             target="_blank"
             rel="noopener noreferrer"
             className="link"
-            aria-label="Code with Vinoth on Google"
+            aria-label="Code with Vnoit on Google"
           >
             Google
           </a>

@@ -7,12 +7,12 @@ const nextConfig = {
         return [
             {
                 source: "/mentorship",
-                destination: "/code-with-vinoth",
+                destination: "/code-with-vnoit",
                 permanent: true,
             },
             {
-                source: "/code-with-vnoit",
-                destination: "/code-with-vinoth",
+                source: "/code-with-vinoth",
+                destination: "/code-with-vnoit",
                 permanent: true,
             },
         ];
