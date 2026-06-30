@@ -7,7 +7,7 @@ const codeWithVnoitDescription =
 
 const bookingUrl = "https://topmate.io/vnoit";
 const teacherOnUrl = "https://www.teacheron.com/tutor/1OZp";
-const googleUrl = "https://share.google/z4FCZ2rWdz9YgGbeA";
+const googleUrl = "https://share.google/Y6rkHkWKpTsEAOz94";
 
 export const metadata: Metadata = {
   title: "Code with Vnoit",

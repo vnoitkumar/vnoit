@@ -134,7 +134,7 @@ export function Footer() {
         </a>
 
         <a
-          href="https://share.google/z4FCZ2rWdz9YgGbeA"
+          href="https://share.google/Y6rkHkWKpTsEAOz94"
           target="_blank"
           rel="noopener noreferrer"
           className="p-2"
