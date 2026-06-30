@@ -47,7 +47,6 @@ ${blogLines}
 - LinkedIn: https://www.linkedin.com/in/vnoit
 - X/Twitter: https://x.com/vnoitkumar
 - GitHub: https://github.com/vnoitkumar
-- Instagram: https://www.instagram.com/vnoitkumar
 `;
 
   return new Response(body, {

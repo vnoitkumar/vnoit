@@ -51,7 +51,6 @@ export default async function Post({ params }: { params: Params }) {
         "https://www.linkedin.com/in/vnoit",
         "https://x.com/vnoitkumar",
         "https://github.com/vnoitkumar",
-        "https://www.instagram.com/vnoitkumar",
       ],
     },
     publisher: {

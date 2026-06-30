@@ -1,6 +1,11 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Intro from "@/components/intro";
+import Career from "@/components/career";
+
+// The experience timeline computes "Present · N mos" from the current date, so
+// regenerate the statically rendered page daily to keep those durations fresh.
+export const revalidate = 86400;
 
 const aboutDescription =
   "About Vinoth (Vnoit) — Lead Consultant at Thoughtworks in Bengaluru, crafting software across the stack. Career, interests, and how to get in touch.";
@@ -69,6 +74,7 @@ function About() {
   };
 
   return (
+    <>
     <section className="mx-auto mt-3 max-w-7xl p-6 lg:px-8 block xl:flex gap-20">
       <script
         type="application/ld+json"
@@ -94,41 +100,6 @@ function About() {
           </p>
 
           <p className="text-jet-black/80 dark:text-baby-powder/80 font-medium mt-3">
-            Outside of code, I&apos;m a bit obsessed with color theory and lean
-            on&nbsp;
-            <a
-              href="https://coolors.co/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="link"
-            >
-              Coolors
-            </a>
-            &nbsp;to pull palettes for my projects. I also design posters in
-            Figma and share them on{" "}
-            <a
-              href="https://x.com/vnoitkumar"
-              aria-label="Vinoth's X (formerly Twitter) profile"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="link"
-            >
-              X
-            </a>{" "}
-            and{" "}
-            <a
-              href="https://www.linkedin.com/in/vnoit"
-              aria-label="Vinoth's LinkedIn profile"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="link"
-            >
-              LinkedIn
-            </a>
-            .
-          </p>
-
-          <p className="text-jet-black/80 dark:text-baby-powder/80 font-medium mt-3">
             Yep, that&apos;s me
             <span className="inline xl:hidden">&nbsp;at the bottom-</span>
             <span className="hidden xl:inline">&nbsp;on the right-</span>
@@ -151,16 +122,6 @@ function About() {
               className="link"
             >
               X
-            </a>
-            ,&nbsp;
-            <a
-              href="https://www.instagram.com/vnoitkumar"
-              aria-label="Vinoth's Instagram profile"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="link"
-            >
-              Instagram
             </a>
             , and&nbsp;
             <a
@@ -205,7 +166,7 @@ function About() {
           </p>
 
           <p className="text-jet-black/80 dark:text-baby-powder/80 font-normal text-xs mt-3">
-            Last updated at: 7th June 2026
+            Last updated at: 30th June 2026
           </p>
         </div>
       </div>
@@ -221,6 +182,8 @@ function About() {
         priority
       />
     </section>
+    <Career />
+    </>
   );
 }
 
