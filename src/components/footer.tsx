@@ -150,7 +150,7 @@ export function Footer() {
         </a>
       </div>
       <p className="text-sm text-jet-black/70 dark:text-baby-powder/70">
-        © {year}&nbsp;Vnoit · Crafted with care, end to end
+        © {year}&nbsp;Vnoit · Crafted with care, end to end with Claude
       </p>
     </footer>
   );
